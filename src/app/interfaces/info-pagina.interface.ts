@@ -8,5 +8,7 @@ export interface InfoPagina {
   twitter?: string;
   instagram?: string;
   tublr?: string;
+  telefono?: string;
+  celular?: string;
   equipo_trabajo?: any[];
 }

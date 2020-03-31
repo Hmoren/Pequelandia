@@ -1,8 +1,10 @@
 
-<section class="ae-container-fluid ae-container-fluid--inner rk-portfolio">
-  <div class="ae-masonry ae-masonry-md-2 ae-masonry-xl-4">
+  <div class="ae-grid au-xs-ta-center au-mb-2">
     
-    <a *ngFor="let productos of productosService.productos" 
+    <div *ngFor="let productos of productosService.productos" 
+    class="animated fadeIn ae-grid__item item-lg-2 ae-kappa au-mb-2">
+      
+    <a 
     [routerLink]="['/item', productos.cod ]" class="animated fadeIn rk-item ae-masonry__item">
       <img src="assets/productos/{{productos.url}}.jpg" alt="">
       <div class="item-meta">
@@ -11,7 +13,7 @@
       </div>
     </a>
       
-      
-  </div>
+    </div>
 
-</section>
+  </div>
+  

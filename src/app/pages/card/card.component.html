@@ -1,0 +1,15 @@
+
+  <div class="ae-grid au-xs-ta-center au-mb-2">
+
+    <div *ngFor="let productos of productosService.productos" 
+    class="animated fadeIn ae-grid__item item-lg-2 ae-kappa au-mb-2">
+    <a [routerLink]="['/item', productos.cod ]" class="animated fadeIn rk-item ae-masonry__item">
+      <img src="assets/productos/{{productos.url}}.jpg" alt="" class="au-mb-2">
+    </a>
+      <h5 class="ae-u-bolder au-mt-2">{{ productos.titulo }}</h5>
+      <p class="ae-u-bolder au-mb-3">{{ productos.categoria }}</p>
+    
+    </div>
+  
+  </div>
+  
