@@ -1,0 +1,4152 @@
+/ *!
+ * Hover.css (http://ianlunn.github.io/Hover/)
+ * Versión: 2.3.2
+ * Autor: Ian Lunn @IanLunn
+ * URL del autor: http://ianlunn.co.uk/
+ * Github: https://github.com/IanLunn/Hover
+
+ * Hover.css Copyright Ian Lunn 2017. Generado con Sass.
+ * /
+/ * TRANSICIONES 2D * /
+/ * Grow * /
+.hvr-grow {
+  pantalla: bloque en línea;
+  alineación vertical: medio;
+  -webkit-transform: perspectiva (1px) translateZ (0);
+  transform: perspectiva (1px) translateZ (0);
+  box-shadow: 0 0 1px rgba (0, 0, 0, 0);
+  -webkit-transición-duración: 0.3s;
+  duración de transición: 0.3s;
+  -webkit-transition-property: transformar;
+  propiedad de transición: transformar;
+}
+.hvr-grow: hover, .hvr-grow: foco, .hvr-grow: activo {
+  -webkit-transform: escala (1.1);
+  transformar: escala (1.1);
+}
+
+/ * Shrink * /
+.hvr-shrink {
+  pantalla: bloque en línea;
+  alineación vertical: medio;
+  -webkit-transform: perspectiva (1px) translateZ (0);
+  transform: perspectiva (1px) translateZ (0);
+  box-shadow: 0 0 1px rgba (0, 0, 0, 0);
+  -webkit-transición-duración: 0.3s;
+  duración de transición: 0.3s;
+  -webkit-transition-property: transformar;
+  propiedad de transición: transformar;
+}
+.hvr-shrink: hover, .hvr-shrink: foco, .hvr-shrink: activo {
+  -webkit-transform: escala (0.9);
+  transformar: escala (0.9);
+}
+
+/ * Pulso * /
+@ -webkit-keyframes hvr-pulse {
+  25% {
+    -webkit-transform: escala (1.1);
+    transformar: escala (1.1);
+  }
+  75% {
+    -webkit-transform: escala (0.9);
+    transformar: escala (0.9);
+  }
+}
+@keyframes hvr-pulse {
+  25% {
+    -webkit-transform: escala (1.1);
+    transformar: escala (1.1);
+  }
+  75% {
+    -webkit-transform: escala (0.9);
+    transformar: escala (0.9);
+  }
+}
+.hvr-pulse {
+  pantalla: bloque en línea;
+  alineación vertical: medio;
+  -webkit-transform: perspectiva (1px) translateZ (0);
+  transform: perspectiva (1px) translateZ (0);
+  box-shadow: 0 0 1px rgba (0, 0, 0, 0);
+}
+.hvr-pulse: hover, .hvr-pulse: focus, .hvr-pulse: active {
+  -webkit-animation-name: hvr-pulse;
+  nombre-animación: hvr-pulse;
+  -webkit-animation-duración: 1s;
+  duración de la animación: 1s;
+  -webkit-animation-timing-function: lineal;
+  función de sincronización de animación: lineal;
+  -webkit-animation-iteration-count: infinito;
+  animación-recuento-iteración: infinito;
+}
+
+/ * Pulse Grow * /
+@ -webkit-keyframes hvr-pulse-grow {
+  a {
+    -webkit-transform: escala (1.1);
+    transformar: escala (1.1);
+  }
+}
+@keyframes hvr-pulse-grow {
+  a {
+    -webkit-transform: escala (1.1);
+    transformar: escala (1.1);
+  }
+}
+.hvr-pulse-grow {
+  pantalla: bloque en línea;
+  alineación vertical: medio;
+  -webkit-transform: perspectiva (1px) translateZ (0);
+  transform: perspectiva (1px) translateZ (0);
+  box-shadow: 0 0 1px rgba (0, 0, 0, 0);
+}
+.hvr-pulse-grow: desplace, .hvr-pulse-grow: foco, .hvr-pulse-grow: activo {
+  -webkit-animation-name: hvr-pulse-grow;
+  nombre-animación: hvr-pulse-grow;
+  -webkit-animation-duración: 0.3s;
+  duración de la animación: 0.3s;
+  -webkit-animation-timing-function: lineal;
+  función de sincronización de animación: lineal;
+  -webkit-animation-iteration-count: infinito;
+  animación-recuento-iteración: infinito;
+  -webkit-animation-direction: alternativo;
+  dirección de animación: alternativa;
+}
+
+/ * Reducción de pulso * /
+@ -webkit-keyframes hvr-pulse-shrink {
+  a {
+    -webkit-transform: escala (0.9);
+    transformar: escala (0.9);
+  }
+}
+@keyframes hvr-pulse-shrink {
+  a {
+    -webkit-transform: escala (0.9);
+    transformar: escala (0.9);
+  }
+}
+.hvr-pulse-shrink {
+  pantalla: bloque en línea;
+  alineación vertical: medio;
+  -webkit-transform: perspectiva (1px) translateZ (0);
+  transform: perspectiva (1px) translateZ (0);
+  box-shadow: 0 0 1px rgba (0, 0, 0, 0);
+}
+.hvr-pulse-shrink: desplazarse, .hvr-pulse-shrink: foco, .hvr-pulse-shrink: activo {
+  -webkit-animation-name: hvr-pulse-shrink;
+  nombre-animación: hvr-pulse-shrink;
+  -webkit-animation-duración: 0.3s;
+  duración de la animación: 0.3s;
+  -webkit-animation-timing-function: lineal;
+  función de sincronización de animación: lineal;
+  -webkit-animation-iteration-count: infinito;
+  animación-recuento-iteración: infinito;
+  -webkit-animation-direction: alternativo;
+  dirección de animación: alternativa;
+}
+
+/* Empujar */
+@ -webkit-keyframes hvr-push {
+  50% {
+    -webkit-transform: escala (0.8);
+    transformar: escala (0.8);
+  }
+  100% {
+    -webkit-transform: escala (1);
+    transformar: escala (1);
+  }
+}
+@keyframes hvr-push {
+  50% {
+    -webkit-transform: escala (0.8);
+    transformar: escala (0.8);
+  }
+  100% {
+    -webkit-transform: escala (1);
+    transformar: escala (1);
+  }
+}
+.hvr-push {
+  pantalla: bloque en línea;
+  alineación vertical: medio;
+  -webkit-transform: perspectiva (1px) translateZ (0);
+  transform: perspectiva (1px) translateZ (0);
+  box-shadow: 0 0 1px rgba (0, 0, 0, 0);
+}
+.hvr-push: hover, .hvr-push: foco, .hvr-push: activo {
+  -webkit-animation-name: hvr-push;
+  nombre-animación: hvr-push;
+  -webkit-animation-duración: 0.3s;
+  duración de la animación: 0.3s;
+  -webkit-animation-timing-function: lineal;
+  función de sincronización de animación: lineal;
+  -webkit-animation-iteration-count: 1;
+  animación-iteración-cuenta: 1;
+}
+
+/ * Pop * /
+@ -webkit-keyframes hvr-pop {
+  50% {
+    -webkit-transform: escala (1.2);
+    transformar: escala (1.2);
+  }
+}
+@keyframes hvr-pop {
+  50% {
+    -webkit-transform: escala (1.2);
+    transformar: escala (1.2);
+  }
+}
+.hvr-pop {
+  pantalla: bloque en línea;
+  alineación vertical: medio;
+  -webkit-transform: perspectiva (1px) translateZ (0);
+  transform: perspectiva (1px) translateZ (0);
+  box-shadow: 0 0 1px rgba (0, 0, 0, 0);
+}
+.hvr-pop: hover, .hvr-pop: foco, .hvr-pop: activo {
+  -webkit-animation-name: hvr-pop;
+  nombre-animación: hvr-pop;
+  -webkit-animation-duración: 0.3s;
+  duración de la animación: 0.3s;
+  -webkit-animation-timing-function: lineal;
+  función de sincronización de animación: lineal;
+  -webkit-animation-iteration-count: 1;
+  animación-iteración-cuenta: 1;
+}
+
+/ * Bounce In * /
+.hvr-bounce-in {
+  pantalla: bloque en línea;
+  alineación vertical: medio;
+  -webkit-transform: perspectiva (1px) translateZ (0);
+  transform: perspectiva (1px) translateZ (0);
+  box-shadow: 0 0 1px rgba (0, 0, 0, 0);
+  -webkit-transición-duración: 0.5s;
+  duración de transición: 0.5s;
+}
+.hvr-bounce-in: hover, .hvr-bounce-in: focus, .hvr-bounce-in: active {
+  -webkit-transform: escala (1.2);
+  transformar: escala (1.2);
+  -webkit-transition-timing-function: cubic-bezier (0.47, 2.02, 0.31, -0.36);
+  función de sincronización de transición: cubic-bezier (0.47, 2.02, 0.31, -0.36);
+}
+
+/* Rebotar fuera */
+.hvr-bounce-out {
+  pantalla: bloque en línea;
+  alineación vertical: medio;
+  -webkit-transform: perspectiva (1px) translateZ (0);
+  transform: perspectiva (1px) translateZ (0);
+  box-shadow: 0 0 1px rgba (0, 0, 0, 0);
+  -webkit-transición-duración: 0.5s;
+  duración de transición: 0.5s;
+}
+.hvr-bounce-out: hover, .hvr-bounce-out: foco, .hvr-bounce-out: activo {
+  -webkit-transform: escala (0.8);
+  transformar: escala (0.8);
+  -webkit-transition-timing-function: cubic-bezier (0.47, 2.02, 0.31, -0.36);
+  función de sincronización de transición: cubic-bezier (0.47, 2.02, 0.31, -0.36);
+}
+
+/ * Rotar * /
+.hvr-rotate {
+  pantalla: bloque en línea;
+  alineación vertical: medio;
+  -webkit-transform: perspectiva (1px) translateZ (0);
+  transform: perspectiva (1px) translateZ (0);
+  box-shadow: 0 0 1px rgba (0, 0, 0, 0);
+  -webkit-transición-duración: 0.3s;
+  duración de transición: 0.3s;
+  -webkit-transition-property: transformar;
+  propiedad de transición: transformar;
+}
+.hvr-rotate: hover, .hvr-rotate: focus, .hvr-rotate: active {
+  -webkit-transform: rotar (4deg);
+  transformar: rotar (4 grados);
+}
+
+/ * Crecer rotar * /
+.hvr-grow-rotate {
+  pantalla: bloque en línea;
+  alineación vertical: medio;
+  -webkit-transform: perspectiva (1px) translateZ (0);
+  transform: perspectiva (1px) translateZ (0);
+  box-shadow: 0 0 1px rgba (0, 0, 0, 0);
+  -webkit-transición-duración: 0.3s;
+  duración de transición: 0.3s;
+  -webkit-transition-property: transformar;
+  propiedad de transición: transformar;
+}
+.hvr-grow-rotate: hover, .hvr-grow-rotate: focus, .hvr-grow-rotate: active {
+  -webkit-transform: escala (1.1) rotar (4deg);
+  transformar: escala (1.1) rotar (4deg);
+}
+
+/ * Flotador * /
+.hvr-float {
+  pantalla: bloque en línea;
+  alineación vertical: medio;
+  -webkit-transform: perspectiva (1px) translateZ (0);
+  transform: perspectiva (1px) translateZ (0);
+  box-shadow: 0 0 1px rgba (0, 0, 0, 0);
+  -webkit-transición-duración: 0.3s;
+  duración de transición: 0.3s;
+  -webkit-transition-property: transformar;
+  propiedad de transición: transformar;
+  -webkit-transition-timing-function: facilidad de salida;
+  función de sincronización de transición: facilitación;
+}
+.hvr-float: hover, .hvr-float: foco, .hvr-float: activo {
+  -webkit-transform: translateY (-8px);
+  transform: translateY (-8px);
+}
+
+/* Lavabo */
+.hvr-sink {
+  pantalla: bloque en línea;
+  alineación vertical: medio;
+  -webkit-transform: perspectiva (1px) translateZ (0);
+  transform: perspectiva (1px) translateZ (0);
+  box-shadow: 0 0 1px rgba (0, 0, 0, 0);
+  -webkit-transición-duración: 0.3s;
+  duración de transición: 0.3s;
+  -webkit-transition-property: transformar;
+  propiedad de transición: transformar;
+  -webkit-transition-timing-function: facilidad de salida;
+  función de sincronización de transición: facilitación;
+}
+.hvr-sink: hover, .hvr-sink: foco, .hvr-sink: activo {
+  -webkit-transform: translateY (8px);
+  transform: translateY (8px);
+}
+
+/* Beto */
+@ -webkit-keyframes hvr-bob {
+  0% {
+    -webkit-transform: translateY (-8px);
+    transform: translateY (-8px);
+  }
+  50% {
+    -webkit-transform: translateY (-4px);
+    transformar: traducirY (-4px);
+  }
+  100% {
+    -webkit-transform: translateY (-8px);
+    transform: translateY (-8px);
+  }
+}
+@keyframes hvr-bob {
+  0% {
+    -webkit-transform: translateY (-8px);
+    transform: translateY (-8px);
+  }
+  50% {
+    -webkit-transform: translateY (-4px);
+    transformar: traducirY (-4px);
+  }
+  100% {
+    -webkit-transform: translateY (-8px);
+    transform: translateY (-8px);
+  }
+}
+@ -webkit-keyframes hvr-bob-float {
+  100% {
+    -webkit-transform: translateY (-8px);
+    transform: translateY (-8px);
+  }
+}
+@keyframes hvr-bob-float {
+  100% {
+    -webkit-transform: translateY (-8px);
+    transform: translateY (-8px);
+  }
+}
+.hvr-bob {
+  pantalla: bloque en línea;
+  alineación vertical: medio;
+  -webkit-transform: perspectiva (1px) translateZ (0);
+  transform: perspectiva (1px) translateZ (0);
+  box-shadow: 0 0 1px rgba (0, 0, 0, 0);
+}
+.hvr-bob: hover, .hvr-bob: foco, .hvr-bob: activo {
+  -webkit-animation-name: hvr-bob-float, hvr-bob;
+  nombre-animación: hvr-bob-float, hvr-bob;
+  -webkit-animation-duración: .3s, 1.5s;
+  duración de la animación: .3s, 1.5s;
+  -webkit-animation-delay: 0s, .3s;
+  animación-delay: 0s, .3s;
+  -webkit-animation-timing-function: facilidad de salida, facilidad de entrada;
+  función de sincronización de animación: facilidad, facilidad de entrada;
+  -webkit-animation-iteration-count: 1, infinito;
+  animación-iteración-cuenta: 1, infinito;
+  -webkit-animation-fill-mode: reenviar;
+  modo de relleno de animación: hacia adelante;
+  -webkit-animation-direction: normal, alternativo;
+  dirección de animación: normal, alternativa;
+}
+
+/* Colgar */
+@ -webkit-keyframes hvr-hang {
+  0% {
+    -webkit-transform: translateY (8px);
+    transform: translateY (8px);
+  }
+  50% {
+    -webkit-transform: translateY (4px);
+    transform: translateY (4px);
+  }
+  100% {
+    -webkit-transform: translateY (8px);
+    transform: translateY (8px);
+  }
+}
+@keyframes hvr-hang {
+  0% {
+    -webkit-transform: translateY (8px);
+    transform: translateY (8px);
+  }
+  50% {
+    -webkit-transform: translateY (4px);
+    transform: translateY (4px);
+  }
+  100% {
+    -webkit-transform: translateY (8px);
+    transform: translateY (8px);
+  }
+}
+@ -webkit-keyframes hvr-hang-sink {
+  100% {
+    -webkit-transform: translateY (8px);
+    transform: translateY (8px);
+  }
+}
+@keyframes hvr-hang-sink {
+  100% {
+    -webkit-transform: translateY (8px);
+    transform: translateY (8px);
+  }
+}
+.hvr-hang {
+  pantalla: bloque en línea;
+  alineación vertical: medio;
+  -webkit-transform: perspectiva (1px) translateZ (0);
+  transform: perspectiva (1px) translateZ (0);
+  box-shadow: 0 0 1px rgba (0, 0, 0, 0);
+}
+.hvr-hang: hover, .hvr-hang: focus, .hvr-hang: active {
+  -webkit-animation-name: hvr-hang-sink, hvr-hang;
+  nombre-animación: hvr-hang-sink, hvr-hang;
+  -webkit-animation-duración: .3s, 1.5s;
+  duración de la animación: .3s, 1.5s;
+  -webkit-animation-delay: 0s, .3s;
+  animación-delay: 0s, .3s;
+  -webkit-animation-timing-function: facilidad de salida, facilidad de entrada;
+  función de sincronización de animación: facilidad, facilidad de entrada;
+  -webkit-animation-iteration-count: 1, infinito;
+  animación-iteración-cuenta: 1, infinito;
+  -webkit-animation-fill-mode: reenviar;
+  modo de relleno de animación: hacia adelante;
+  -webkit-animation-direction: normal, alternativo;
+  dirección de animación: normal, alternativa;
+}
+
+/ * Inclinación * /
+.hvr-skew {
+  pantalla: bloque en línea;
+  alineación vertical: medio;
+  -webkit-transform: perspectiva (1px) translateZ (0);
+  transform: perspectiva (1px) translateZ (0);
+  box-shadow: 0 0 1px rgba (0, 0, 0, 0);
+  -webkit-transición-duración: 0.3s;
+  duración de transición: 0.3s;
+  -webkit-transition-property: transformar;
+  propiedad de transición: transformar;
+}
+.hvr-skew: hover, .hvr-skew: focus, .hvr-skew: active {
+  -webkit-transform: sesgo (-10deg);
+  transformar: sesgo (-10deg);
+}
+
+/ * Inclinar hacia adelante * /
+.hvr-skew-forward {
+  pantalla: bloque en línea;
+  alineación vertical: medio;
+  -webkit-transform: perspectiva (1px) translateZ (0);
+  transform: perspectiva (1px) translateZ (0);
+  box-shadow: 0 0 1px rgba (0, 0, 0, 0);
+  -webkit-transición-duración: 0.3s;
+  duración de transición: 0.3s;
+  -webkit-transition-property: transformar;
+  propiedad de transición: transformar;
+  -webkit-transform-origin: 0 100%;
+  origen de transformación: 0 100%;
+}
+.hvr-skew-forward: hover, .hvr-skew-forward: foco, .hvr-skew-forward: activo {
+  -webkit-transform: sesgo (-10deg);
+  transformar: sesgo (-10deg);
+}
+
+/ * Inclinarse hacia atrás * /
+.hvr-skew-backward {
+  pantalla: bloque en línea;
+  alineación vertical: medio;
+  -webkit-transform: perspectiva (1px) translateZ (0);
+  transform: perspectiva (1px) translateZ (0);
+  box-shadow: 0 0 1px rgba (0, 0, 0, 0);
+  -webkit-transición-duración: 0.3s;
+  duración de transición: 0.3s;
+  -webkit-transition-property: transformar;
+  propiedad de transición: transformar;
+  -webkit-transform-origin: 0 100%;
+  origen de transformación: 0 100%;
+}
+.hvr-skew-backward: hover, .hvr-skew-backward: foco, .hvr-skew-backward: activo {
+  -webkit-transform: sesgo (10deg);
+  transformar: sesgo (10 grados);
+}
+
+/ * Wobble Vertical * /
+@ -webkit-keyframes hvr-wobble-vertical {
+  16,65% {
+    -webkit-transform: translateY (8px);
+    transform: translateY (8px);
+  }
+  33,3% {
+    -webkit-transform: translateY (-6px);
+    transform: translateY (-6px);
+  }
+  49.95% {
+    -webkit-transform: translateY (4px);
+    transform: translateY (4px);
+  }
+  66,6% {
+    -webkit-transform: translateY (-2px);
+    transform: translateY (-2px);
+  }
+  83.25% {
+    -webkit-transform: translateY (1px);
+    transform: translateY (1px);
+  }
+  100% {
+    -webkit-transform: translateY (0);
+    transformar: traducirY (0);
+  }
+}
+@keyframes hvr-wobble-vertical {
+  16,65% {
+    -webkit-transform: translateY (8px);
+    transform: translateY (8px);
+  }
+  33,3% {
+    -webkit-transform: translateY (-6px);
+    transform: translateY (-6px);
+  }
+  49.95% {
+    -webkit-transform: translateY (4px);
+    transform: translateY (4px);
+  }
+  66,6% {
+    -webkit-transform: translateY (-2px);
+    transform: translateY (-2px);
+  }
+  83.25% {
+    -webkit-transform: translateY (1px);
+    transform: translateY (1px);
+  }
+  100% {
+    -webkit-transform: translateY (0);
+    transformar: traducirY (0);
+  }
+}
+.hvr-wobble-vertical {
+  pantalla: bloque en línea;
+  alineación vertical: medio;
+  -webkit-transform: perspectiva (1px) translateZ (0);
+  transform: perspectiva (1px) translateZ (0);
+  box-shadow: 0 0 1px rgba (0, 0, 0, 0);
+}
+.hvr-wobble-vertical: hover, .hvr-wobble-vertical: foco, .hvr-wobble-vertical: activo {
+  -webkit-animation-name: hvr-wobble-vertical;
+  nombre-animación: hvr-wobble-vertical;
+  -webkit-animation-duración: 1s;
+  duración de la animación: 1s;
+  -webkit-animation-timing-function: facilidad de entrada;
+  función de sincronización de animación: facilidad de entrada y salida;
+  -webkit-animation-iteration-count: 1;
+  animación-iteración-cuenta: 1;
+}
+
+/ * Bamboleo horizontal * /
+@ -webkit-keyframes hvr-wobble-horizontal {
+  16,65% {
+    -webkit-transform: translateX (8px);
+    transform: translateX (8px);
+  }
+  33,3% {
+    -webkit-transform: translateX (-6px);
+    transformar: translateX (-6px);
+  }
+  49.95% {
+    -webkit-transform: translateX (4px);
+    transform: translateX (4px);
+  }
+  66,6% {
+    -webkit-transform: translateX (-2px);
+    transformar: translateX (-2px);
+  }
+  83.25% {
+    -webkit-transform: translateX (1px);
+    transform: translateX (1px);
+  }
+  100% {
+    -webkit-transform: translateX (0);
+    transformar: traducirX (0);
+  }
+}
+@keyframes hvr-wobble-horizontal {
+  16,65% {
+    -webkit-transform: translateX (8px);
+    transform: translateX (8px);
+  }
+  33,3% {
+    -webkit-transform: translateX (-6px);
+    transformar: translateX (-6px);
+  }
+  49.95% {
+    -webkit-transform: translateX (4px);
+    transform: translateX (4px);
+  }
+  66,6% {
+    -webkit-transform: translateX (-2px);
+    transformar: translateX (-2px);
+  }
+  83.25% {
+    -webkit-transform: translateX (1px);
+    transform: translateX (1px);
+  }
+  100% {
+    -webkit-transform: translateX (0);
+    transformar: traducirX (0);
+  }
+}
+.hvr-wobble-horizontal {
+  pantalla: bloque en línea;
+  alineación vertical: medio;
+  -webkit-transform: perspectiva (1px) translateZ (0);
+  transform: perspectiva (1px) translateZ (0);
+  box-shadow: 0 0 1px rgba (0, 0, 0, 0);
+}
+.hvr-wobble-horizontal: hover, .hvr-wobble-horizontal: foco, .hvr-wobble-horizontal: activo {
+  -webkit-animation-name: hvr-wobble-horizontal;
+  nombre-animación: hvr-wobble-horizontal;
+  -webkit-animation-duración: 1s;
+  duración de la animación: 1s;
+  -webkit-animation-timing-function: facilidad de entrada;
+  función de sincronización de animación: facilidad de entrada y salida;
+  -webkit-animation-iteration-count: 1;
+  animación-iteración-cuenta: 1;
+}
+
+/ * Bamboleo hacia abajo a la derecha * /
+@ -webkit-keyframes hvr-wobble-to-bottom-right {
+  16,65% {
+    -webkit-transform: traducir (8px, 8px);
+    transformar: traducir (8 px, 8 px);
+  }
+  33,3% {
+    -webkit-transform: traducir (-6px, -6px);
+    transformar: traducir (-6px, -6px);
+  }
+  49.95% {
+    -webkit-transform: traducir (4px, 4px);
+    transformar: traducir (4px, 4px);
+  }
+  66,6% {
+    -webkit-transform: traducir (-2px, -2px);
+    transformar: traducir (-2px, -2px);
+  }
+  83.25% {
+    -webkit-transform: traducir (1px, 1px);
+    transformar: traducir (1 px, 1 px);
+  }
+  100% {
+    -webkit-transform: traducir (0, 0);
+    transformar: traducir (0, 0);
+  }
+}
+@keyframes hvr-wobble-to-bottom-right {
+  16,65% {
+    -webkit-transform: traducir (8px, 8px);
+    transformar: traducir (8 px, 8 px);
+  }
+  33,3% {
+    -webkit-transform: traducir (-6px, -6px);
+    transformar: traducir (-6px, -6px);
+  }
+  49.95% {
+    -webkit-transform: traducir (4px, 4px);
+    transformar: traducir (4px, 4px);
+  }
+  66,6% {
+    -webkit-transform: traducir (-2px, -2px);
+    transformar: traducir (-2px, -2px);
+  }
+  83.25% {
+    -webkit-transform: traducir (1px, 1px);
+    transformar: traducir (1 px, 1 px);
+  }
+  100% {
+    -webkit-transform: traducir (0, 0);
+    transformar: traducir (0, 0);
+  }
+}
+.hvr-wobble-to-bottom-right {
+  pantalla: bloque en línea;
+  alineación vertical: medio;
+  -webkit-transform: perspectiva (1px) translateZ (0);
+  transform: perspectiva (1px) translateZ (0);
+  box-shadow: 0 0 1px rgba (0, 0, 0, 0);
+}
+.hvr-wobble-to-bottom-right: hover, .hvr-wobble-to-bottom-right: focus, .hvr-wobble-to-bottom-right: active {
+  -webkit-animation-name: hvr-wobble-to-bottom-right;
+  nombre-animación: hvr-wobble-to-bottom-right;
+  -webkit-animation-duración: 1s;
+  duración de la animación: 1s;
+  -webkit-animation-timing-function: facilidad de entrada;
+  función de sincronización de animación: facilidad de entrada y salida;
+  -webkit-animation-iteration-count: 1;
+  animación-iteración-cuenta: 1;
+}
+
+/ * Bamboleo hacia arriba a la derecha * /
+@ -webkit-keyframes hvr-wobble-to-top-right {
+  16,65% {
+    -webkit-transform: traducir (8px, -8px);
+    transformar: traducir (8px, -8px);
+  }
+  33,3% {
+    -webkit-transform: traducir (-6px, 6px);
+    transformar: traducir (-6px, 6px);
+  }
+  49.95% {
+    -webkit-transform: traducir (4px, -4px);
+    transformar: traducir (4 px, -4 px);
+  }
+  66,6% {
+    -webkit-transform: traducir (-2px, 2px);
+    transformar: traducir (-2px, 2px);
+  }
+  83.25% {
+    -webkit-transform: traducir (1px, -1px);
+    transformar: traducir (1px, -1px);
+  }
+  100% {
+    -webkit-transform: traducir (0, 0);
+    transformar: traducir (0, 0);
+  }
+}
+@keyframes hvr-wobble-to-top-right {
+  16,65% {
+    -webkit-transform: traducir (8px, -8px);
+    transformar: traducir (8px, -8px);
+  }
+  33,3% {
+    -webkit-transform: traducir (-6px, 6px);
+    transformar: traducir (-6px, 6px);
+  }
+  49.95% {
+    -webkit-transform: traducir (4px, -4px);
+    transformar: traducir (4 px, -4 px);
+  }
+  66,6% {
+    -webkit-transform: traducir (-2px, 2px);
+    transformar: traducir (-2px, 2px);
+  }
+  83.25% {
+    -webkit-transform: traducir (1px, -1px);
+    transformar: traducir (1px, -1px);
+  }
+  100% {
+    -webkit-transform: traducir (0, 0);
+    transformar: traducir (0, 0);
+  }
+}
+.hvr-wobble-to-top-right {
+  pantalla: bloque en línea;
+  alineación vertical: medio;
+  -webkit-transform: perspectiva (1px) translateZ (0);
+  transform: perspectiva (1px) translateZ (0);
+  box-shadow: 0 0 1px rgba (0, 0, 0, 0);
+}
+.hvr-wobble-to-top-right: hover, .hvr-wobble-to-top-right: focus, .hvr-wobble-to-top-right: active {
+  -webkit-animation-name: hvr-wobble-to-top-right;
+  nombre-animación: hvr-wobble-to-top-right;
+  -webkit-animation-duración: 1s;
+  duración de la animación: 1s;
+  -webkit-animation-timing-function: facilidad de entrada;
+  función de sincronización de animación: facilidad de entrada y salida;
+  -webkit-animation-iteration-count: 1;
+  animación-iteración-cuenta: 1;
+}
+
+/ * Wobble Top * /
+@ -webkit-keyframes hvr-wobble-top {
+  16,65% {
+    -webkit-transform: sesgo (-12deg);
+    transformar: sesgo (-12deg);
+  }
+  33,3% {
+    -webkit-transform: sesgo (10deg);
+    transformar: sesgo (10 grados);
+  }
+  49.95% {
+    -webkit-transform: sesgo (-6deg);
+    transformar: sesgo (-6deg);
+  }
+  66,6% {
+    -webkit-transform: sesgo (4deg);
+    transformar: sesgo (4 grados);
+  }
+  83.25% {
+    -webkit-transform: sesgo (-2deg);
+    transformar: sesgo (-2deg);
+  }
+  100% {
+    -webkit-transform: sesgo (0);
+    transformar: sesgo (0);
+  }
+}
+@keyframes hvr-wobble-top {
+  16,65% {
+    -webkit-transform: sesgo (-12deg);
+    transformar: sesgo (-12deg);
+  }
+  33,3% {
+    -webkit-transform: sesgo (10deg);
+    transformar: sesgo (10 grados);
+  }
+  49.95% {
+    -webkit-transform: sesgo (-6deg);
+    transformar: sesgo (-6deg);
+  }
+  66,6% {
+    -webkit-transform: sesgo (4deg);
+    transformar: sesgo (4 grados);
+  }
+  83.25% {
+    -webkit-transform: sesgo (-2deg);
+    transformar: sesgo (-2deg);
+  }
+  100% {
+    -webkit-transform: sesgo (0);
+    transformar: sesgo (0);
+  }
+}
+.hvr-wobble-top {
+  pantalla: bloque en línea;
+  alineación vertical: medio;
+  -webkit-transform: perspectiva (1px) translateZ (0);
+  transform: perspectiva (1px) translateZ (0);
+  box-shadow: 0 0 1px rgba (0, 0, 0, 0);
+  -webkit-transform-origin: 0 100%;
+  origen de transformación: 0 100%;
+}
+.hvr-wobble-top: hover, .hvr-wobble-top: foco, .hvr-wobble-top: activo {
+  -webkit-animation-name: hvr-wobble-top;
+  nombre-animación: hvr-wobble-top;
+  -webkit-animation-duración: 1s;
+  duración de la animación: 1s;
+  -webkit-animation-timing-function: facilidad de entrada;
+  función de sincronización de animación: facilidad de entrada y salida;
+  -webkit-animation-iteration-count: 1;
+  animación-iteración-cuenta: 1;
+}
+
+/ * Fondo de oscilación * /
+@ -webkit-keyframes hvr-wobble-bottom {
+  16,65% {
+    -webkit-transform: sesgo (-12deg);
+    transformar: sesgo (-12deg);
+  }
+  33,3% {
+    -webkit-transform: sesgo (10deg);
+    transformar: sesgo (10 grados);
+  }
+  49.95% {
+    -webkit-transform: sesgo (-6deg);
+    transformar: sesgo (-6deg);
+  }
+  66,6% {
+    -webkit-transform: sesgo (4deg);
+    transformar: sesgo (4 grados);
+  }
+  83.25% {
+    -webkit-transform: sesgo (-2deg);
+    transformar: sesgo (-2deg);
+  }
+  100% {
+    -webkit-transform: sesgo (0);
+    transformar: sesgo (0);
+  }
+}
+@keyframes hvr-wobble-bottom {
+  16,65% {
+    -webkit-transform: sesgo (-12deg);
+    transformar: sesgo (-12deg);
+  }
+  33,3% {
+    -webkit-transform: sesgo (10deg);
+    transformar: sesgo (10 grados);
+  }
+  49.95% {
+    -webkit-transform: sesgo (-6deg);
+    transformar: sesgo (-6deg);
+  }
+  66,6% {
+    -webkit-transform: sesgo (4deg);
+    transformar: sesgo (4 grados);
+  }
+  83.25% {
+    -webkit-transform: sesgo (-2deg);
+    transformar: sesgo (-2deg);
+  }
+  100% {
+    -webkit-transform: sesgo (0);
+    transformar: sesgo (0);
+  }
+}
+.hvr-wobble-bottom {
+  pantalla: bloque en línea;
+  alineación vertical: medio;
+  -webkit-transform: perspectiva (1px) translateZ (0);
+  transform: perspectiva (1px) translateZ (0);
+  box-shadow: 0 0 1px rgba (0, 0, 0, 0);
+  -webkit-transform-origin: 100% 0;
+  origen de transformación: 100% 0;
+}
+.hvr-wobble-bottom: hover, .hvr-wobble-bottom: foco, .hvr-wobble-bottom: activo {
+  -webkit-animation-name: hvr-wobble-bottom;
+  nombre-animación: hvr-wobble-bottom;
+  -webkit-animation-duración: 1s;
+  duración de la animación: 1s;
+  -webkit-animation-timing-function: facilidad de entrada;
+  función de sincronización de animación: facilidad de entrada y salida;
+  -webkit-animation-iteration-count: 1;
+  animación-iteración-cuenta: 1;
+}
+
+/ * Inclinación torcida * /
+@ -webkit-keyframes hvr-wobble-skew {
+  16,65% {
+    -webkit-transform: sesgo (-12deg);
+    transformar: sesgo (-12deg);
+  }
+  33,3% {
+    -webkit-transform: sesgo (10deg);
+    transformar: sesgo (10 grados);
+  }
+  49.95% {
+    -webkit-transform: sesgo (-6deg);
+    transformar: sesgo (-6deg);
+  }
+  66,6% {
+    -webkit-transform: sesgo (4deg);
+    transformar: sesgo (4 grados);
+  }
+  83.25% {
+    -webkit-transform: sesgo (-2deg);
+    transformar: sesgo (-2deg);
+  }
+  100% {
+    -webkit-transform: sesgo (0);
+    transformar: sesgo (0);
+  }
+}
+@keyframes hvr-wobble-skew {
+  16,65% {
+    -webkit-transform: sesgo (-12deg);
+    transformar: sesgo (-12deg);
+  }
+  33,3% {
+    -webkit-transform: sesgo (10deg);
+    transformar: sesgo (10 grados);
+  }
+  49.95% {
+    -webkit-transform: sesgo (-6deg);
+    transformar: sesgo (-6deg);
+  }
+  66,6% {
+    -webkit-transform: sesgo (4deg);
+    transformar: sesgo (4 grados);
+  }
+  83.25% {
+    -webkit-transform: sesgo (-2deg);
+    transformar: sesgo (-2deg);
+  }
+  100% {
+    -webkit-transform: sesgo (0);
+    transformar: sesgo (0);
+  }
+}
+.hvr-wobble-skew {
+  pantalla: bloque en línea;
+  alineación vertical: medio;
+  -webkit-transform: perspectiva (1px) translateZ (0);
+  transform: perspectiva (1px) translateZ (0);
+  box-shadow: 0 0 1px rgba (0, 0, 0, 0);
+}
+.hvr-wobble-skew: hover, .hvr-wobble-skew: foco, .hvr-wobble-skew: activo {
+  -webkit-animation-name: hvr-wobble-skew;
+  nombre-animación: hvr-wobble-skew;
+  -webkit-animation-duración: 1s;
+  duración de la animación: 1s;
+  -webkit-animation-timing-function: facilidad de entrada;
+  función de sincronización de animación: facilidad de entrada y salida;
+  -webkit-animation-iteration-count: 1;
+  animación-iteración-cuenta: 1;
+}
+
+/ * Zumbido * /
+@ -webkit-keyframes hvr-buzz {
+  50% {
+    -webkit-transform: translateX (3px) rotate (2deg);
+    transform: translateX (3px) rotate (2deg);
+  }
+  100% {
+    -webkit-transform: translateX (-3px) rotate (-2deg);
+    transform: translateX (-3px) rotate (-2deg);
+  }
+}
+@keyframes hvr-buzz {
+  50% {
+    -webkit-transform: translateX (3px) rotate (2deg);
+    transform: translateX (3px) rotate (2deg);
+  }
+  100% {
+    -webkit-transform: translateX (-3px) rotate (-2deg);
+    transform: translateX (-3px) rotate (-2deg);
+  }
+}
+.hvr-buzz {
+  pantalla: bloque en línea;
+  alineación vertical: medio;
+  -webkit-transform: perspectiva (1px) translateZ (0);
+  transform: perspectiva (1px) translateZ (0);
+  box-shadow: 0 0 1px rgba (0, 0, 0, 0);
+}
+.hvr-buzz: hover, .hvr-buzz: foco, .hvr-buzz: activo {
+  -webkit-animation-name: hvr-buzz;
+  nombre-animación: hvr-buzz;
+  -webkit-animation-duración: 0.15s;
+  duración de la animación: 0,15 s;
+  -webkit-animation-timing-function: lineal;
+  función de sincronización de animación: lineal;
+  -webkit-animation-iteration-count: infinito;
+  animación-recuento-iteración: infinito;
+}
+
+/ * Zumbido * /
+@ -webkit-keyframes hvr-buzz-out {
+  10% {
+    -webkit-transform: translateX (3px) rotate (2deg);
+    transform: translateX (3px) rotate (2deg);
+  }
+  20% {
+    -webkit-transform: translateX (-3px) rotate (-2deg);
+    transform: translateX (-3px) rotate (-2deg);
+  }
+  30% {
+    -webkit-transform: translateX (3px) rotate (2deg);
+    transform: translateX (3px) rotate (2deg);
+  }
+  40% {
+    -webkit-transform: translateX (-3px) rotate (-2deg);
+    transform: translateX (-3px) rotate (-2deg);
+  }
+  50% {
+    -webkit-transform: translateX (2px) rotate (1deg);
+    transform: translateX (2px) rotate (1deg);
+  }
+  60% {
+    -webkit-transform: translateX (-2px) rotate (-1deg);
+    transform: translateX (-2px) rotate (-1deg);
+  }
+  70% {
+    -webkit-transform: translateX (2px) rotate (1deg);
+    transform: translateX (2px) rotate (1deg);
+  }
+  80% {
+    -webkit-transform: translateX (-2px) rotate (-1deg);
+    transform: translateX (-2px) rotate (-1deg);
+  }
+  90% {
+    -webkit-transform: translateX (1px) rotar (0);
+    transform: translateX (1px) rotar (0);
+  }
+  100% {
+    -webkit-transform: translateX (-1px) rotar (0);
+    transform: translateX (-1px) rotar (0);
+  }
+}
+@keyframes hvr-buzz-out {
+  10% {
+    -webkit-transform: translateX (3px) rotate (2deg);
+    transform: translateX (3px) rotate (2deg);
+  }
+  20% {
+    -webkit-transform: translateX (-3px) rotate (-2deg);
+    transform: translateX (-3px) rotate (-2deg);
+  }
+  30% {
+    -webkit-transform: translateX (3px) rotate (2deg);
+    transform: translateX (3px) rotate (2deg);
+  }
+  40% {
+    -webkit-transform: translateX (-3px) rotate (-2deg);
+    transform: translateX (-3px) rotate (-2deg);
+  }
+  50% {
+    -webkit-transform: translateX (2px) rotate (1deg);
+    transform: translateX (2px) rotate (1deg);
+  }
+  60% {
+    -webkit-transform: translateX (-2px) rotate (-1deg);
+    transform: translateX (-2px) rotate (-1deg);
+  }
+  70% {
+    -webkit-transform: translateX (2px) rotate (1deg);
+    transform: translateX (2px) rotate (1deg);
+  }
+  80% {
+    -webkit-transform: translateX (-2px) rotate (-1deg);
+    transform: translateX (-2px) rotate (-1deg);
+  }
+  90% {
+    -webkit-transform: translateX (1px) rotar (0);
+    transform: translateX (1px) rotar (0);
+  }
+  100% {
+    -webkit-transform: translateX (-1px) rotar (0);
+    transform: translateX (-1px) rotar (0);
+  }
+}
+.hvr-buzz-out {
+  pantalla: bloque en línea;
+  alineación vertical: medio;
+  -webkit-transform: perspectiva (1px) translateZ (0);
+  transform: perspectiva (1px) translateZ (0);
+  box-shadow: 0 0 1px rgba (0, 0, 0, 0);
+}
+.hvr-buzz-out: hover, .hvr-buzz-out: foco, .hvr-buzz-out: activo {
+  -webkit-animation-name: hvr-buzz-out;
+  nombre-animación: hvr-buzz-out;
+  -webkit-animation-duración: 0.75s;
+  duración de la animación: 0,75 s;
+  -webkit-animation-timing-function: lineal;
+  función de sincronización de animación: lineal;
+  -webkit-animation-iteration-count: 1;
+  animación-iteración-cuenta: 1;
+}
+
+/* Adelante */
+.hvr-forward {
+  pantalla: bloque en línea;
+  alineación vertical: medio;
+  -webkit-transform: perspectiva (1px) translateZ (0);
+  transform: perspectiva (1px) translateZ (0);
+  box-shadow: 0 0 1px rgba (0, 0, 0, 0);
+  -webkit-transición-duración: 0.3s;
+  duración de transición: 0.3s;
+  -webkit-transition-property: transformar;
+  propiedad de transición: transformar;
+}
+.hvr-forward: hover, .hvr-forward: foco, .hvr-forward: activo {
+  -webkit-transform: translateX (8px);
+  transform: translateX (8px);
+}
+
+/ * Atrás * /
+.hvr-backward {
+  pantalla: bloque en línea;
+  alineación vertical: medio;
+  -webkit-transform: perspectiva (1px) translateZ (0);
+  transform: perspectiva (1px) translateZ (0);
+  box-shadow: 0 0 1px rgba (0, 0, 0, 0);
+  -webkit-transición-duración: 0.3s;
+  duración de transición: 0.3s;
+  -webkit-transition-property: transformar;
+  propiedad de transición: transformar;
+}
+.hvr-backward: hover, .hvr-backward: focus, .hvr-backward: active {
+  -webkit-transform: translateX (-8px);
+  transform: translateX (-8px);
+}
+
+/ * TRANSICIONES DE ANTECEDENTES * /
+/* Desvanecerse */
+.hvr-fade {
+  pantalla: bloque en línea;
+  alineación vertical: medio;
+  -webkit-transform: perspectiva (1px) translateZ (0);
+  transform: perspectiva (1px) translateZ (0);
+  box-shadow: 0 0 1px rgba (0, 0, 0, 0);
+  desbordamiento: oculto;
+  -webkit-transición-duración: 0.3s;
+  duración de transición: 0.3s;
+  -webkit-transition-property: color, color de fondo;
+  propiedad de transición: color, color de fondo;
+}
+.hvr-fade: hover, .hvr-fade: focus, .hvr-fade: active {
+  color de fondo: # 2098D1;
+  color blanco;
+}
+
+/ * Pulso trasero * /
+@ -webkit-keyframes hvr-back-pulse {
+  50% {
+    color de fondo: rgba (32, 152, 209, 0,75);
+  }
+}
+@keyframes hvr-back-pulse {
+  50% {
+    color de fondo: rgba (32, 152, 209, 0,75);
+  }
+}
+.hvr-back-pulse {
+  pantalla: bloque en línea;
+  alineación vertical: medio;
+  -webkit-transform: perspectiva (1px) translateZ (0);
+  transform: perspectiva (1px) translateZ (0);
+  box-shadow: 0 0 1px rgba (0, 0, 0, 0);
+  desbordamiento: oculto;
+  -webkit-transición-duración: 0.5s;
+  duración de transición: 0.5s;
+  -webkit-transition-property: color, color de fondo;
+  propiedad de transición: color, color de fondo;
+}
+.hvr-back-pulse: hover, .hvr-back-pulse: foco, .hvr-back-pulse: activo {
+  -webkit-animation-name: hvr-back-pulse;
+  nombre-animación: hvr-back-pulse;
+  -webkit-animation-duración: 1s;
+  duración de la animación: 1s;
+  -webkit-animation-delay: 0.5s;
+  animación-delay: 0.5s;
+  -webkit-animation-timing-function: lineal;
+  función de sincronización de animación: lineal;
+  -webkit-animation-iteration-count: infinito;
+  animación-recuento-iteración: infinito;
+  color de fondo: # 2098D1;
+  color de fondo: # 2098d1;
+  color blanco;
+}
+
+/ * Barrer a la derecha * /
+.hvr-sweep-to-right {.
+  pantalla: bloque en línea;
+  alineación vertical: medio;
+  -webkit-transform: perspectiva (1px) translateZ (0);
+  transform: perspectiva (1px) translateZ (0);
+  box-shadow: 0 0 1px rgba (0, 0, 0, 0);
+  posición: relativa;
+  -webkit-transition-property: color;
+  propiedad de transición: color;
+  -webkit-transición-duración: 0.3s;
+  duración de transición: 0.3s;
+}
+.hvr-sweep-to-right: antes de {
+  contenido: "";
+  posición: absoluta;
+  índice z: -1;
+  arriba: 0;
+  izquierda: 0;
+  derecha: 0;
+  abajo: 0;
+  fondo: # 2098D1;
+  -webkit-transform: scaleX (0);
+  transformar: scaleX (0);
+  -webkit-transform-origin: 0 50%;
+  origen de transformación: 0 50%;
+  -webkit-transition-property: transformar;
+  propiedad de transición: transformar;
+  -webkit-transición-duración: 0.3s;
+  duración de transición: 0.3s;
+  -webkit-transition-timing-function: facilidad de salida;
+  función de sincronización de transición: facilitación;
+}
+.hvr-sweep-to-right: hover, .hvr-sweep-to-right: focus, .hvr-sweep-to-right: active {
+  color blanco;
+}
+.hvr-sweep-to-right: hover: before, .hvr-sweep-to-right: focus: before, .hvr-sweep-to-right: active: before {
+  -webkit-transform: scaleX (1);
+  transformar: scaleX (1);
+}
+
+/ * Barrer a la izquierda * /
+.hvr-sweep-to-left {
+  pantalla: bloque en línea;
+  alineación vertical: medio;
+  -webkit-transform: perspectiva (1px) translateZ (0);
+  transform: perspectiva (1px) translateZ (0);
+  box-shadow: 0 0 1px rgba (0, 0, 0, 0);
+  posición: relativa;
+  -webkit-transition-property: color;
+  propiedad de transición: color;
+  -webkit-transición-duración: 0.3s;
+  duración de transición: 0.3s;
+}
+.hvr-sweep-to-left: antes de {
+  contenido: "";
+  posición: absoluta;
+  índice z: -1;
+  arriba: 0;
+  izquierda: 0;
+  derecha: 0;
+  abajo: 0;
+  fondo: # 2098D1;
+  -webkit-transform: scaleX (0);
+  transformar: scaleX (0);
+  -webkit-transform-origin: 100% 50%;
+  origen de transformación: 100% 50%;
+  -webkit-transition-property: transformar;
+  propiedad de transición: transformar;
+  -webkit-transición-duración: 0.3s;
+  duración de transición: 0.3s;
+  -webkit-transition-timing-function: facilidad de salida;
+  función de sincronización de transición: facilitación;
+}
+.hvr-sweep-to-left: hover, .hvr-sweep-to-left: foco, .hvr-sweep-to-left: activo {
+  color blanco;
+}
+.hvr-sweep-to-left: hover: before, .hvr-sweep-to-left: focus: before, .hvr-sweep-to-left: active: before {
+  -webkit-transform: scaleX (1);
+  transformar: scaleX (1);
+}
+
+/ * Barrer al fondo * /
+.hvr-sweep-to-bottom {.
+  pantalla: bloque en línea;
+  alineación vertical: medio;
+  -webkit-transform: perspectiva (1px) translateZ (0);
+  transform: perspectiva (1px) translateZ (0);
+  box-shadow: 0 0 1px rgba (0, 0, 0, 0);
+  posición: relativa;
+  -webkit-transition-property: color;
+  propiedad de transición: color;
+  -webkit-transición-duración: 0.3s;
+  duración de transición: 0.3s;
+}
+.hvr-sweep-to-bottom: antes de {
+  contenido: "";
+  posición: absoluta;
+  índice z: -1;
+  arriba: 0;
+  izquierda: 0;
+  derecha: 0;
+  abajo: 0;
+  fondo: # 2098D1;
+  -webkit-transform: scaleY (0);
+  transformar: scaleY (0);
+  -webkit-transform-origin: 50% 0;
+  origen de transformación: 50% 0;
+  -webkit-transition-property: transformar;
+  propiedad de transición: transformar;
+  -webkit-transición-duración: 0.3s;
+  duración de transición: 0.3s;
+  -webkit-transition-timing-function: facilidad de salida;
+  función de sincronización de transición: facilitación;
+}
+.hvr-sweep-to-bottom: hover, .hvr-sweep-to-bottom: foco, .hvr-sweep-to-bottom: activo {
+  color blanco;
+}
+.hvr-sweep-to-bottom: hover: before, .hvr-sweep-to-bottom: focus: before, .hvr-sweep-to-bottom: active: before {
+  -webkit-transform: scaleY (1);
+  transformar: scaleY (1);
+}
+
+/ * Barrer hacia arriba * /
+.hvr-sweep-to-top {
+  pantalla: bloque en línea;
+  alineación vertical: medio;
+  -webkit-transform: perspectiva (1px) translateZ (0);
+  transform: perspectiva (1px) translateZ (0);
+  box-shadow: 0 0 1px rgba (0, 0, 0, 0);
+  posición: relativa;
+  -webkit-transition-property: color;
+  propiedad de transición: color;
+  -webkit-transición-duración: 0.3s;
+  duración de transición: 0.3s;
+}
+.hvr-sweep-to-top: antes de {
+  contenido: "";
+  posición: absoluta;
+  índice z: -1;
+  arriba: 0;
+  izquierda: 0;
+  derecha: 0;
+  abajo: 0;
+  fondo: # 2098D1;
+  -webkit-transform: scaleY (0);
+  transformar: scaleY (0);
+  -webkit-transform-origin: 50% 100%;
+  origen de transformación: 50% 100%;
+  -webkit-transition-property: transformar;
+  propiedad de transición: transformar;
+  -webkit-transición-duración: 0.3s;
+  duración de transición: 0.3s;
+  -webkit-transition-timing-function: facilidad de salida;
+  función de sincronización de transición: facilitación;
+}
+.hvr-sweep-to-top: desplazarse, .hvr-sweep-to-top: foco, .hvr-sweep-to-top: activo {
+  color blanco;
+}
+.hvr-sweep-to-top: hover: before, .hvr-sweep-to-top: focus: before, .hvr-sweep-to-top: active: before {
+  -webkit-transform: scaleY (1);
+  transformar: scaleY (1);
+}
+
+/ * Rebotar a la derecha * /
+.hvr-rebotar a la derecha {
+  pantalla: bloque en línea;
+  alineación vertical: medio;
+  -webkit-transform: perspectiva (1px) translateZ (0);
+  transform: perspectiva (1px) translateZ (0);
+  box-shadow: 0 0 1px rgba (0, 0, 0, 0);
+  posición: relativa;
+  -webkit-transition-property: color;
+  propiedad de transición: color;
+  -webkit-transición-duración: 0.5s;
+  duración de transición: 0.5s;
+}
+.hvr-rebote a la derecha: antes de {
+  contenido: "";
+  posición: absoluta;
+  índice z: -1;
+  arriba: 0;
+  izquierda: 0;
+  derecha: 0;
+  abajo: 0;
+  fondo: # 2098D1;
+  -webkit-transform: scaleX (0);
+  transformar: scaleX (0);
+  -webkit-transform-origin: 0 50%;
+  origen de transformación: 0 50%;
+  -webkit-transition-property: transformar;
+  propiedad de transición: transformar;
+  -webkit-transición-duración: 0.5s;
+  duración de transición: 0.5s;
+  -webkit-transition-timing-function: facilidad de salida;
+  función de sincronización de transición: facilitación;
+}
+.hvr-bounce-to-right: hover, .hvr-bounce-to-right: focus, .hvr-bounce-to-right: active {
+  color blanco;
+}
+.hvr-bounce-to-right: hover: before, .hvr-bounce-to-right: focus: before, .hvr-bounce-to-right: active: before {
+  -webkit-transform: scaleX (1);
+  transformar: scaleX (1);
+  -webkit-transition-timing-function: cubic-bezier (0.52, 1.64, 0.37, 0.66);
+  función de sincronización de transición: cubic-bezier (0.52, 1.64, 0.37, 0.66);
+}
+
+/ * Rebotar a la izquierda * /
+.hvr-rebote-a-izquierda {
+  pantalla: bloque en línea;
+  alineación vertical: medio;
+  -webkit-transform: perspectiva (1px) translateZ (0);
+  transform: perspectiva (1px) translateZ (0);
+  box-shadow: 0 0 1px rgba (0, 0, 0, 0);
+  posición: relativa;
+  -webkit-transition-property: color;
+  propiedad de transición: color;
+  -webkit-transición-duración: 0.5s;
+  duración de transición: 0.5s;
+}
+.hvr-rebote-a-izquierda: antes de {
+  contenido: "";
+  posición: absoluta;
+  índice z: -1;
+  arriba: 0;
+  izquierda: 0;
+  derecha: 0;
+  abajo: 0;
+  fondo: # 2098D1;
+  -webkit-transform: scaleX (0);
+  transformar: scaleX (0);
+  -webkit-transform-origin: 100% 50%;
+  origen de transformación: 100% 50%;
+  -webkit-transition-property: transformar;
+  propiedad de transición: transformar;
+  -webkit-transición-duración: 0.5s;
+  duración de transición: 0.5s;
+  -webkit-transition-timing-function: facilidad de salida;
+  función de sincronización de transición: facilitación;
+}
+.hvr-rebotar hacia la izquierda: desplazarse, .hvr-rebotar hacia la izquierda: foco, .hvr-rebotar hacia la izquierda: activo {
+  color blanco;
+}
+.hvr-bounce-to-left: hover: before, .hvr-bounce-to-left: focus: before, .hvr-bounce-to-left: active: before {
+  -webkit-transform: scaleX (1);
+  transformar: scaleX (1);
+  -webkit-transition-timing-function: cubic-bezier (0.52, 1.64, 0.37, 0.66);
+  función de sincronización de transición: cubic-bezier (0.52, 1.64, 0.37, 0.66);
+}
+
+/ * Rebotar a la parte inferior * /
+.hvr-bounce-to-bottom {
+  pantalla: bloque en línea;
+  alineación vertical: medio;
+  -webkit-transform: perspectiva (1px) translateZ (0);
+  transform: perspectiva (1px) translateZ (0);
+  box-shadow: 0 0 1px rgba (0, 0, 0, 0);
+  posición: relativa;
+  -webkit-transition-property: color;
+  propiedad de transición: color;
+  -webkit-transición-duración: 0.5s;
+  duración de transición: 0.5s;
+}
+.hvr-bounce-to-bottom: antes de {
+  contenido: "";
+  posición: absoluta;
+  índice z: -1;
+  arriba: 0;
+  izquierda: 0;
+  derecha: 0;
+  abajo: 0;
+  fondo: # 2098D1;
+  -webkit-transform: scaleY (0);
+  transformar: scaleY (0);
+  -webkit-transform-origin: 50% 0;
+  origen de transformación: 50% 0;
+  -webkit-transition-property: transformar;
+  propiedad de transición: transformar;
+  -webkit-transición-duración: 0.5s;
+  duración de transición: 0.5s;
+  -webkit-transition-timing-function: facilidad de salida;
+  función de sincronización de transición: facilitación;
+}
+.hvr-bounce-to-bottom: hover, .hvr-bounce-to-bottom: foco, .hvr-bounce-to-bottom: activo {
+  color blanco;
+}
+.hvr-bounce-to-bottom: hover: before, .hvr-bounce-to-bottom: focus: before, .hvr-bounce-to-bottom: active: before {
+  -webkit-transform: scaleY (1);
+  transformar: scaleY (1);
+  -webkit-transition-timing-function: cubic-bezier (0.52, 1.64, 0.37, 0.66);
+  función de sincronización de transición: cubic-bezier (0.52, 1.64, 0.37, 0.66);
+}
+
+/ * Bounce To Top * /
+.hvr-bounce-to-top {
+  pantalla: bloque en línea;
+  alineación vertical: medio;
+  -webkit-transform: perspectiva (1px) translateZ (0);
+  transform: perspectiva (1px) translateZ (0);
+  box-shadow: 0 0 1px rgba (0, 0, 0, 0);
+  posición: relativa;
+  -webkit-transition-property: color;
+  propiedad de transición: color;
+  -webkit-transición-duración: 0.5s;
+  duración de transición: 0.5s;
+}
+.hvr-bounce-to-top: antes de {
+  contenido: "";
+  posición: absoluta;
+  índice z: -1;
+  arriba: 0;
+  izquierda: 0;
+  derecha: 0;
+  abajo: 0;
+  fondo: # 2098D1;
+  -webkit-transform: scaleY (0);
+  transformar: scaleY (0);
+  -webkit-transform-origin: 50% 100%;
+  origen de transformación: 50% 100%;
+  -webkit-transition-property: transformar;
+  propiedad de transición: transformar;
+  -webkit-transición-duración: 0.5s;
+  duración de transición: 0.5s;
+  -webkit-transition-timing-function: facilidad de salida;
+  función de sincronización de transición: facilitación;
+}
+.hvr-bounce-to-top: hover, .hvr-bounce-to-top: foco, .hvr-bounce-to-top: activo {
+  color blanco;
+}
+.hvr-bounce-to-top: hover: before, .hvr-bounce-to-top: focus: before, .hvr-bounce-to-top: active: before {
+  -webkit-transform: scaleY (1);
+  transformar: scaleY (1);
+  -webkit-transition-timing-function: cubic-bezier (0.52, 1.64, 0.37, 0.66);
+  función de sincronización de transición: cubic-bezier (0.52, 1.64, 0.37, 0.66);
+}
+
+/ * Salida radial * /
+.hvr-radial-out {
+  pantalla: bloque en línea;
+  alineación vertical: medio;
+  -webkit-transform: perspectiva (1px) translateZ (0);
+  transform: perspectiva (1px) translateZ (0);
+  box-shadow: 0 0 1px rgba (0, 0, 0, 0);
+  posición: relativa;
+  desbordamiento: oculto;
+  fondo: # e1e1e1;
+  -webkit-transition-property: color;
+  propiedad de transición: color;
+  -webkit-transición-duración: 0.3s;
+  duración de transición: 0.3s;
+}
+.hvr-radial-out: antes de {
+  contenido: "";
+  posición: absoluta;
+  índice z: -1;
+  arriba: 0;
+  izquierda: 0;
+  derecha: 0;
+  abajo: 0;
+  fondo: # 2098D1;
+  radio de borde: 100%;
+  -webkit-transform: escala (0);
+  transformar: escala (0);
+  -webkit-transition-property: transformar;
+  propiedad de transición: transformar;
+  -webkit-transición-duración: 0.3s;
+  duración de transición: 0.3s;
+  -webkit-transition-timing-function: facilidad de salida;
+  función de sincronización de transición: facilitación;
+}
+.hvr-radial-out: hover, .hvr-radial-out: foco, .hvr-radial-out: activo {
+  color blanco;
+}
+.hvr-radial-out: hover: before, .hvr-radial-out: focus: before, .hvr-radial-out: active: before {
+  -webkit-transform: escala (2);
+  transformar: escala (2);
+}
+
+/ * Radial In * /
+.hvr-radial-in {
+  pantalla: bloque en línea;
+  alineación vertical: medio;
+  -webkit-transform: perspectiva (1px) translateZ (0);
+  transform: perspectiva (1px) translateZ (0);
+  box-shadow: 0 0 1px rgba (0, 0, 0, 0);
+  posición: relativa;
+  desbordamiento: oculto;
+  fondo: # 2098D1;
+  -webkit-transition-property: color;
+  propiedad de transición: color;
+  -webkit-transición-duración: 0.3s;
+  duración de transición: 0.3s;
+}
+.hvr-radial-in: antes de {
+  contenido: "";
+  posición: absoluta;
+  índice z: -1;
+  arriba: 0;
+  izquierda: 0;
+  derecha: 0;
+  abajo: 0;
+  fondo: # e1e1e1;
+  radio de borde: 100%;
+  -webkit-transform: escala (2);
+  transformar: escala (2);
+  -webkit-transition-property: transformar;
+  propiedad de transición: transformar;
+  -webkit-transición-duración: 0.3s;
+  duración de transición: 0.3s;
+  -webkit-transition-timing-function: facilidad de salida;
+  función de sincronización de transición: facilitación;
+}
+.hvr-radial-in: hover, .hvr-radial-in: focus, .hvr-radial-in: active {
+  color blanco;
+}
+.hvr-radial-in: hover: before, .hvr-radial-in: focus: before, .hvr-radial-in: active: before {
+  -webkit-transform: escala (0);
+  transformar: escala (0);
+}
+
+/ * Rectángulo en * /
+.hvr-rectángulo-en {
+  pantalla: bloque en línea;
+  alineación vertical: medio;
+  -webkit-transform: perspectiva (1px) translateZ (0);
+  transform: perspectiva (1px) translateZ (0);
+  box-shadow: 0 0 1px rgba (0, 0, 0, 0);
+  posición: relativa;
+  fondo: # 2098D1;
+  -webkit-transition-property: color;
+  propiedad de transición: color;
+  -webkit-transición-duración: 0.3s;
+  duración de transición: 0.3s;
+}
+.hvr-rectangle-in: before {
+  contenido: "";
+  posición: absoluta;
+  índice z: -1;
+  arriba: 0;
+  izquierda: 0;
+  derecha: 0;
+  abajo: 0;
+  fondo: # e1e1e1;
+  -webkit-transform: escala (1);
+  transformar: escala (1);
+  -webkit-transition-property: transformar;
+  propiedad de transición: transformar;
+  -webkit-transición-duración: 0.3s;
+  duración de transición: 0.3s;
+  -webkit-transition-timing-function: facilidad de salida;
+  función de sincronización de transición: facilitación;
+}
+.hvr-rectangle-in: hover, .hvr-rectangle-in: focus, .hvr-rectangle-in: active {
+  color blanco;
+}
+.hvr-rectangle-in: hover: before, .hvr-rectangle-in: focus: before, .hvr-rectangle-in: active: before {
+  -webkit-transform: escala (0);
+  transformar: escala (0);
+}
+
+/ * Rectángulo hacia fuera * /
+.hvr-rectangle-out {
+  pantalla: bloque en línea;
+  alineación vertical: medio;
+  -webkit-transform: perspectiva (1px) translateZ (0);
+  transform: perspectiva (1px) translateZ (0);
+  box-shadow: 0 0 1px rgba (0, 0, 0, 0);
+  posición: relativa;
+  fondo: # e1e1e1;
+  -webkit-transition-property: color;
+  propiedad de transición: color;
+  -webkit-transición-duración: 0.3s;
+  duración de transición: 0.3s;
+}
+.hvr-rectangle-out: antes de {
+  contenido: "";
+  posición: absoluta;
+  índice z: -1;
+  arriba: 0;
+  izquierda: 0;
+  derecha: 0;
+  abajo: 0;
+  fondo: # 2098D1;
+  -webkit-transform: escala (0);
+  transformar: escala (0);
+  -webkit-transition-property: transformar;
+  propiedad de transición: transformar;
+  -webkit-transición-duración: 0.3s;
+  duración de transición: 0.3s;
+  -webkit-transition-timing-function: facilidad de salida;
+  función de sincronización de transición: facilitación;
+}
+.hvr-rectangle-out: hover, .hvr-rectangle-out: focus, .hvr-rectangle-out: active {
+  color blanco;
+}
+.hvr-rectangle-out: hover: before, .hvr-rectangle-out: focus: before, .hvr-rectangle-out: active: before {
+  -webkit-transform: escala (1);
+  transformar: escala (1);
+}
+
+/ * Obturador en horizontal * /
+.hvr-shutter-in-horizontal {
+  pantalla: bloque en línea;
+  alineación vertical: medio;
+  -webkit-transform: perspectiva (1px) translateZ (0);
+  transform: perspectiva (1px) translateZ (0);
+  box-shadow: 0 0 1px rgba (0, 0, 0, 0);
+  posición: relativa;
+  fondo: # 2098D1;
+  -webkit-transition-property: color;
+  propiedad de transición: color;
+  -webkit-transición-duración: 0.3s;
+  duración de transición: 0.3s;
+}
+.hvr-shutter-in-horizontal: antes de {
+  contenido: "";
+  posición: absoluta;
+  índice z: -1;
+  arriba: 0;
+  abajo: 0;
+  izquierda: 0;
+  derecha: 0;
+  fondo: # e1e1e1;
+  -webkit-transform: scaleX (1);
+  transformar: scaleX (1);
+  -webkit-transform-origin: 50%;
+  origen de transformación: 50%;
+  -webkit-transition-property: transformar;
+  propiedad de transición: transformar;
+  -webkit-transición-duración: 0.3s;
+  duración de transición: 0.3s;
+  -webkit-transition-timing-function: facilidad de salida;
+  función de sincronización de transición: facilitación;
+}
+.hvr-shutter-in-horizontal: hover, .hvr-shutter-in-horizontal: focus, .hvr-shutter-in-horizontal: active {
+  color blanco;
+}
+.hvr-shutter-in-horizontal: hover: before, .hvr-shutter-in-horizontal: focus: before, .hvr-shutter-in-horizontal: active: before {
+  -webkit-transform: scaleX (0);
+  transformar: scaleX (0);
+}
+
+/ * Obturador horizontal * /
+.hvr-shutter-out-horizontal {
+  pantalla: bloque en línea;
+  alineación vertical: medio;
+  -webkit-transform: perspectiva (1px) translateZ (0);
+  transform: perspectiva (1px) translateZ (0);
+  box-shadow: 0 0 1px rgba (0, 0, 0, 0);
+  posición: relativa;
+  fondo: # e1e1e1;
+  -webkit-transition-property: color;
+  propiedad de transición: color;
+  -webkit-transición-duración: 0.3s;
+  duración de transición: 0.3s;
+}
+.hvr-shutter-out-horizontal: antes de {
+  contenido: "";
+  posición: absoluta;
+  índice z: -1;
+  arriba: 0;
+  abajo: 0;
+  izquierda: 0;
+  derecha: 0;
+  fondo: # 2098D1;
+  -webkit-transform: scaleX (0);
+  transformar: scaleX (0);
+  -webkit-transform-origin: 50%;
+  origen de transformación: 50%;
+  -webkit-transition-property: transformar;
+  propiedad de transición: transformar;
+  -webkit-transición-duración: 0.3s;
+  duración de transición: 0.3s;
+  -webkit-transition-timing-function: facilidad de salida;
+  función de sincronización de transición: facilitación;
+}
+.hvr-shutter-out-horizontal: hover, .hvr-shutter-out-horizontal: foco, .hvr-shutter-out-horizontal: activo {
+  color blanco;
+}
+.hvr-shutter-out-horizontal: hover: before, .hvr-shutter-out-horizontal: focus: before, .hvr-shutter-out-horizontal: active: before {
+  -webkit-transform: scaleX (1);
+  transformar: scaleX (1);
+}
+
+/ * Obturador en vertical * /
+.hvr-shutter-in-vertical {
+  pantalla: bloque en línea;
+  alineación vertical: medio;
+  -webkit-transform: perspectiva (1px) translateZ (0);
+  transform: perspectiva (1px) translateZ (0);
+  box-shadow: 0 0 1px rgba (0, 0, 0, 0);
+  posición: relativa;
+  fondo: # 2098D1;
+  -webkit-transition-property: color;
+  propiedad de transición: color;
+  -webkit-transición-duración: 0.3s;
+  duración de transición: 0.3s;
+}
+.hvr-shutter-in-vertical: antes de {
+  contenido: "";
+  posición: absoluta;
+  índice z: -1;
+  arriba: 0;
+  abajo: 0;
+  izquierda: 0;
+  derecha: 0;
+  fondo: # e1e1e1;
+  -webkit-transform: scaleY (1);
+  transformar: scaleY (1);
+  -webkit-transform-origin: 50%;
+  origen de transformación: 50%;
+  -webkit-transition-property: transformar;
+  propiedad de transición: transformar;
+  -webkit-transición-duración: 0.3s;
+  duración de transición: 0.3s;
+  -webkit-transition-timing-function: facilidad de salida;
+  función de sincronización de transición: facilitación;
+}
+.hvr-shutter-in-vertical: hover, .hvr-shutter-in-vertical: focus, .hvr-shutter-in-vertical: active {
+  color blanco;
+}
+.hvr-shutter-in-vertical: hover: before, .hvr-shutter-in-vertical: focus: before, .hvr-shutter-in-vertical: active: before {
+  -webkit-transform: scaleY (0);
+  transformar: scaleY (0);
+}
+
+/ * Obturador vertical * /
+.hvr-shutter-out-vertical {
+  pantalla: bloque en línea;
+  alineación vertical: medio;
+  -webkit-transform: perspectiva (1px) translateZ (0);
+  transform: perspectiva (1px) translateZ (0);
+  box-shadow: 0 0 1px rgba (0, 0, 0, 0);
+  posición: relativa;
+  fondo: # e1e1e1;
+  -webkit-transition-property: color;
+  propiedad de transición: color;
+  -webkit-transición-duración: 0.3s;
+  duración de transición: 0.3s;
+}
+.hvr-shutter-out-vertical: antes de {
+  contenido: "";
+  posición: absoluta;
+  índice z: -1;
+  arriba: 0;
+  abajo: 0;
+  izquierda: 0;
+  derecha: 0;
+  fondo: # 2098D1;
+  -webkit-transform: scaleY (0);
+  transformar: scaleY (0);
+  -webkit-transform-origin: 50%;
+  origen de transformación: 50%;
+  -webkit-transition-property: transformar;
+  propiedad de transición: transformar;
+  -webkit-transición-duración: 0.3s;
+  duración de transición: 0.3s;
+  -webkit-transition-timing-function: facilidad de salida;
+  función de sincronización de transición: facilitación;
+}
+.hvr-shutter-out-vertical: hover, .hvr-shutter-out-vertical: foco, .hvr-shutter-out-vertical: activo {
+  color blanco;
+}
+.hvr-shutter-out-vertical: hover: before, .hvr-shutter-out-vertical: focus: before, .hvr-shutter-out-vertical: active: before {
+  -webkit-transform: scaleY (1);
+  transformar: scaleY (1);
+}
+
+/ * TRANSICIONES FRONTERIZAS * /
+/ * Border Fade * /
+.hvr-border-fade {
+  pantalla: bloque en línea;
+  alineación vertical: medio;
+  -webkit-transform: perspectiva (1px) translateZ (0);
+  transform: perspectiva (1px) translateZ (0);
+  box-shadow: 0 0 1px rgba (0, 0, 0, 0);
+  -webkit-transición-duración: 0.3s;
+  duración de transición: 0.3s;
+  -webkit-transition-property: box-shadow;
+  propiedad de transición: cuadro-sombra;
+  box-shadow: recuadro 0 0 0 4px # e1e1e1, 0 0 1px rgba (0, 0, 0, 0);
+  / * Hack para mejorar el alias en dispositivos móviles / tabletas * /
+}
+.hvr-border-fade: hover, .hvr-border-fade: focus, .hvr-border-fade: active {
+  box-shadow: recuadro 0 0 0 4px # 2098D1, 0 0 1px rgba (0, 0, 0, 0);
+  / * Hack para mejorar el alias en dispositivos móviles / tabletas * /
+}
+
+/ * Hueco * /
+.hvr-hollow {
+  pantalla: bloque en línea;
+  alineación vertical: medio;
+  -webkit-transform: perspectiva (1px) translateZ (0);
+  transform: perspectiva (1px) translateZ (0);
+  box-shadow: 0 0 1px rgba (0, 0, 0, 0);
+  -webkit-transición-duración: 0.3s;
+  duración de transición: 0.3s;
+  -webkit-transition-property: fondo;
+  propiedad de transición: fondo;
+  box-shadow: recuadro 0 0 0 4px # e1e1e1, 0 0 1px rgba (0, 0, 0, 0);
+  / * Hack para mejorar el alias en dispositivos móviles / tabletas * /
+}
+.hvr-hollow: hover, .hvr-hollow: foco, .hvr-hollow: activo {
+  fondo: ninguno;
+}
+
+/* Podar */
+.hvr-trim {
+  pantalla: bloque en línea;
+  alineación vertical: medio;
+  -webkit-transform: perspectiva (1px) translateZ (0);
+  transform: perspectiva (1px) translateZ (0);
+  box-shadow: 0 0 1px rgba (0, 0, 0, 0);
+  posición: relativa;
+}
+.hvr-trim: antes de {
+  contenido: '';
+  posición: absoluta;
+  borde: blanco sólido 4px;
+  arriba: 4px;
+  izquierda: 4px;
+  derecha: 4px;
+  abajo: 4px;
+  opacidad: 0;
+  -webkit-transición-duración: 0.3s;
+  duración de transición: 0.3s;
+  -webkit-transition-property: opacidad;
+  propiedad de transición: opacidad;
+}
+.hvr-trim: hover: before, .hvr-trim: focus: before, .hvr-trim: active: before {
+  opacidad: 1;
+}
+
+/ * Ondulación * /
+@ -webkit-keyframes hvr-ripple-out {
+  100% {
+    arriba: -12px;
+    derecha: -12px;
+    abajo: -12px;
+    izquierda: -12px;
+    opacidad: 0;
+  }
+}
+@keyframes hvr-ripple-out {
+  100% {
+    arriba: -12px;
+    derecha: -12px;
+    abajo: -12px;
+    izquierda: -12px;
+    opacidad: 0;
+  }
+}
+.hvr-ripple-out {
+  pantalla: bloque en línea;
+  alineación vertical: medio;
+  -webkit-transform: perspectiva (1px) translateZ (0);
+  transform: perspectiva (1px) translateZ (0);
+  box-shadow: 0 0 1px rgba (0, 0, 0, 0);
+  posición: relativa;
+}
+.hvr-ripple-out: antes de {
+  contenido: '';
+  posición: absoluta;
+  borde: # e1e1e1 sólido 6px;
+  arriba: 0;
+  derecha: 0;
+  abajo: 0;
+  izquierda: 0;
+  -webkit-animation-duración: 1s;
+  duración de la animación: 1s;
+}
+.hvr-ripple-out: hover: before, .hvr-ripple-out: focus: before, .hvr-ripple-out: active: before {
+  -webkit-animation-name: hvr-ripple-out;
+  nombre-animación: hvr-ripple-out;
+}
+
+/ * Ondulación en * /
+@ -webkit-keyframes hvr-ripple-in {
+  100% {
+    arriba: 0;
+    derecha: 0;
+    abajo: 0;
+    izquierda: 0;
+    opacidad: 1;
+  }
+}
+@keyframes hvr-ripple-in {
+  100% {
+    arriba: 0;
+    derecha: 0;
+    abajo: 0;
+    izquierda: 0;
+    opacidad: 1;
+  }
+}
+.hvr-ripple-in {
+  pantalla: bloque en línea;
+  alineación vertical: medio;
+  -webkit-transform: perspectiva (1px) translateZ (0);
+  transform: perspectiva (1px) translateZ (0);
+  box-shadow: 0 0 1px rgba (0, 0, 0, 0);
+  posición: relativa;
+}
+.hvr-ripple-in: antes de {
+  contenido: '';
+  posición: absoluta;
+  borde: # e1e1e1 sólido 4px;
+  arriba: -12px;
+  derecha: -12px;
+  abajo: -12px;
+  izquierda: -12px;
+  opacidad: 0;
+  -webkit-animation-duración: 1s;
+  duración de la animación: 1s;
+}
+.hvr-ripple-in: hover: before, .hvr-ripple-in: focus: before, .hvr-ripple-in: active: before {
+  -webkit-animation-name: hvr-ripple-in;
+  nombre-animación: hvr-ripple-in;
+}
+
+/ * Esquema fuera * /
+.hvr-outline-out {
+  pantalla: bloque en línea;
+  alineación vertical: medio;
+  -webkit-transform: perspectiva (1px) translateZ (0);
+  transform: perspectiva (1px) translateZ (0);
+  box-shadow: 0 0 1px rgba (0, 0, 0, 0);
+  posición: relativa;
+}
+.hvr-outline-out: antes de {
+  contenido: '';
+  posición: absoluta;
+  borde: # e1e1e1 sólido 4px;
+  arriba: 0;
+  derecha: 0;
+  abajo: 0;
+  izquierda: 0;
+  -webkit-transición-duración: 0.3s;
+  duración de transición: 0.3s;
+  -webkit-transition-property: arriba, derecha, abajo, izquierda;
+  propiedad de transición: arriba, derecha, abajo, izquierda;
+}
+.hvr-outline-out: hover: before, .hvr-outline-out: focus: before, .hvr-outline-out: active: before {
+  arriba: -8px;
+  derecha: -8px;
+  abajo: -8px;
+  izquierda: -8px;
+}
+
+/ * Esquema en * /
+.hvr-outline-in {
+  pantalla: bloque en línea;
+  alineación vertical: medio;
+  -webkit-transform: perspectiva (1px) translateZ (0);
+  transform: perspectiva (1px) translateZ (0);
+  box-shadow: 0 0 1px rgba (0, 0, 0, 0);
+  posición: relativa;
+}
+.hvr-outline-in: before {
+  eventos de puntero: ninguno;
+  contenido: '';
+  posición: absoluta;
+  borde: # e1e1e1 sólido 4px;
+  arriba: -16px;
+  derecha: -16px;
+  abajo: -16px;
+  izquierda: -16px;
+  opacidad: 0;
+  -webkit-transición-duración: 0.3s;
+  duración de transición: 0.3s;
+  -webkit-transition-property: arriba, derecha, abajo, izquierda;
+  propiedad de transición: arriba, derecha, abajo, izquierda;
+}
+.hvr-outline-in: hover: before, .hvr-outline-in: focus: before, .hvr-outline-in: active: before {
+  arriba: -8px;
+  derecha: -8px;
+  abajo: -8px;
+  izquierda: -8px;
+  opacidad: 1;
+}
+
+/* Esquinas redondas */
+.hvr-round-corners {
+  pantalla: bloque en línea;
+  alineación vertical: medio;
+  -webkit-transform: perspectiva (1px) translateZ (0);
+  transform: perspectiva (1px) translateZ (0);
+  box-shadow: 0 0 1px rgba (0, 0, 0, 0);
+  -webkit-transición-duración: 0.3s;
+  duración de transición: 0.3s;
+  -webkit-transition-property: border-radius;
+  propiedad de transición: radio-borde;
+}
+.hvr-round-corners: hover, .hvr-round-corners: foco, .hvr-round-corners: activo {
+  radio de borde: 1em;
+}
+
+/ * Subrayado desde la izquierda * /
+.hvr-underline-from-left {
+  pantalla: bloque en línea;
+  alineación vertical: medio;
+  -webkit-transform: perspectiva (1px) translateZ (0);
+  transform: perspectiva (1px) translateZ (0);
+  box-shadow: 0 0 1px rgba (0, 0, 0, 0);
+  posición: relativa;
+  desbordamiento: oculto;
+}
+.hvr-underline-from-left: antes de {
+  contenido: "";
+  posición: absoluta;
+  índice z: -1;
+  izquierda: 0;
+  derecha: 100%;
+  abajo: 0;
+  fondo: # 2098D1;
+  altura: 4px;
+  -webkit-transition-property: derecho;
+  propiedad de transición: derecho;
+  -webkit-transición-duración: 0.3s;
+  duración de transición: 0.3s;
+  -webkit-transition-timing-function: facilidad de salida;
+  función de sincronización de transición: facilitación;
+}
+.hvr-underline-from-left: hover: before, .hvr-underline-from-left: focus: before, .hvr-underline-from-left: active: before {
+  derecha: 0;
+}
+
+/ * Subrayado desde el centro * /
+.hvr-underline-from-center {
+  pantalla: bloque en línea;
+  alineación vertical: medio;
+  -webkit-transform: perspectiva (1px) translateZ (0);
+  transform: perspectiva (1px) translateZ (0);
+  box-shadow: 0 0 1px rgba (0, 0, 0, 0);
+  posición: relativa;
+  desbordamiento: oculto;
+}
+.hvr-underline-from-center: antes de {
+  contenido: "";
+  posición: absoluta;
+  índice z: -1;
+  izquierda: 51%;
+  derecha: 51%;
+  abajo: 0;
+  fondo: # 2098D1;
+  altura: 4px;
+  -webkit-transition-property: izquierda, derecha;
+  propiedad de transición: izquierda, derecha;
+  -webkit-transición-duración: 0.3s;
+  duración de transición: 0.3s;
+  -webkit-transition-timing-function: facilidad de salida;
+  función de sincronización de transición: facilitación;
+}
+.hvr-underline-from-center: hover: before, .hvr-underline-from-center: focus: before, .hvr-underline-from-center: active: before {
+  izquierda: 0;
+  derecha: 0;
+}
+
+/ * Subrayado desde la derecha * /
+.hvr-underline-from-right {
+  pantalla: bloque en línea;
+  alineación vertical: medio;
+  -webkit-transform: perspectiva (1px) translateZ (0);
+  transform: perspectiva (1px) translateZ (0);
+  box-shadow: 0 0 1px rgba (0, 0, 0, 0);
+  posición: relativa;
+  desbordamiento: oculto;
+}
+.hvr-underline-from-right: antes de {
+  contenido: "";
+  posición: absoluta;
+  índice z: -1;
+  izquierda: 100%;
+  derecha: 0;
+  abajo: 0;
+  fondo: # 2098D1;
+  altura: 4px;
+  -webkit-transition-property: izquierda;
+  propiedad de transición: izquierda;
+  -webkit-transición-duración: 0.3s;
+  duración de transición: 0.3s;
+  -webkit-transition-timing-function: facilidad de salida;
+  función de sincronización de transición: facilitación;
+}
+.hvr-underline-from-right: hover: before, .hvr-underline-from-right: focus: before, .hvr-underline-from-right: active: before {
+  izquierda: 0;
+}
+
+/ * Overline desde la izquierda * /
+.hvr-overline-from-left {
+  pantalla: bloque en línea;
+  alineación vertical: medio;
+  -webkit-transform: perspectiva (1px) translateZ (0);
+  transform: perspectiva (1px) translateZ (0);
+  box-shadow: 0 0 1px rgba (0, 0, 0, 0);
+  posición: relativa;
+  desbordamiento: oculto;
+}
+.hvr-overline-from-left: antes de {
+  contenido: "";
+  posición: absoluta;
+  índice z: -1;
+  izquierda: 0;
+  derecha: 100%;
+  arriba: 0;
+  fondo: # 2098D1;
+  altura: 4px;
+  -webkit-transition-property: derecho;
+  propiedad de transición: derecho;
+  -webkit-transición-duración: 0.3s;
+  duración de transición: 0.3s;
+  -webkit-transition-timing-function: facilidad de salida;
+  función de sincronización de transición: facilitación;
+}
+.hvr-overline-from-left: hover: before, .hvr-overline-from-left: focus: before, .hvr-overline-from-left: active: before {
+  derecha: 0;
+}
+
+/ * Overline desde el centro * /
+.hvr-overline-from-center {
+  pantalla: bloque en línea;
+  alineación vertical: medio;
+  -webkit-transform: perspectiva (1px) translateZ (0);
+  transform: perspectiva (1px) translateZ (0);
+  box-shadow: 0 0 1px rgba (0, 0, 0, 0);
+  posición: relativa;
+  desbordamiento: oculto;
+}
+.hvr-overline-from-center: antes de {
+  contenido: "";
+  posición: absoluta;
+  índice z: -1;
+  izquierda: 51%;
+  derecha: 51%;
+  arriba: 0;
+  fondo: # 2098D1;
+  altura: 4px;
+  -webkit-transition-property: izquierda, derecha;
+  propiedad de transición: izquierda, derecha;
+  -webkit-transición-duración: 0.3s;
+  duración de transición: 0.3s;
+  -webkit-transition-timing-function: facilidad de salida;
+  función de sincronización de transición: facilitación;
+}
+.hvr-overline-from-center: hover: before, .hvr-overline-from-center: focus: before, .hvr-overline-from-center: active: before {
+  izquierda: 0;
+  derecha: 0;
+}
+
+/ * Overline desde la derecha * /
+.hvr-overline-from-right {
+  pantalla: bloque en línea;
+  alineación vertical: medio;
+  -webkit-transform: perspectiva (1px) translateZ (0);
+  transform: perspectiva (1px) translateZ (0);
+  box-shadow: 0 0 1px rgba (0, 0, 0, 0);
+  posición: relativa;
+  desbordamiento: oculto;
+}
+.hvr-overline-from-right: antes de {
+  contenido: "";
+  posición: absoluta;
+  índice z: -1;
+  izquierda: 100%;
+  derecha: 0;
+  arriba: 0;
+  fondo: # 2098D1;
+  altura: 4px;
+  -webkit-transition-property: izquierda;
+  propiedad de transición: izquierda;
+  -webkit-transición-duración: 0.3s;
+  duración de transición: 0.3s;
+  -webkit-transition-timing-function: facilidad de salida;
+  función de sincronización de transición: facilitación;
+}
+.hvr-overline-from-right: hover: before, .hvr-overline-from-right: focus: before, .hvr-overline-from-right: active: before {
+  izquierda: 0;
+}
+
+/* Revelar */
+.hvr-revelar {
+  pantalla: bloque en línea;
+  alineación vertical: medio;
+  -webkit-transform: perspectiva (1px) translateZ (0);
+  transform: perspectiva (1px) translateZ (0);
+  box-shadow: 0 0 1px rgba (0, 0, 0, 0);
+  posición: relativa;
+  desbordamiento: oculto;
+}
+.hvr-revelar: antes de {
+  contenido: "";
+  posición: absoluta;
+  índice z: -1;
+  izquierda: 0;
+  derecha: 0;
+  arriba: 0;
+  abajo: 0;
+  color del borde: # 2098D1;
+  estilo de borde: sólido;
+  ancho de borde: 0;
+  -webkit-transition-property: border-width;
+  propiedad de transición: ancho de borde;
+  -webkit-transición-duración: 0.1s;
+  duración de transición: 0.1s;
+  -webkit-transition-timing-function: facilidad de salida;
+  función de sincronización de transición: facilitación;
+}
+.hvr-revelar: hover: antes, .hvr-revelar: enfoque: antes, .hvr-revelar: activo: antes {
+  -webkit-transform: translateY (0);
+  transformar: traducirY (0);
+  ancho de borde: 4px;
+}
+
+/ * Subrayado Revelar * /
+.hvr-underline-revelar {
+  pantalla: bloque en línea;
+  alineación vertical: medio;
+  -webkit-transform: perspectiva (1px) translateZ (0);
+  transform: perspectiva (1px) translateZ (0);
+  box-shadow: 0 0 1px rgba (0, 0, 0, 0);
+  posición: relativa;
+  desbordamiento: oculto;
+}
+.hvr-underline-revelar: antes de {
+  contenido: "";
+  posición: absoluta;
+  índice z: -1;
+  izquierda: 0;
+  derecha: 0;
+  abajo: 0;
+  fondo: # 2098D1;
+  altura: 4px;
+  -webkit-transform: translateY (4px);
+  transform: translateY (4px);
+  -webkit-transition-property: transformar;
+  propiedad de transición: transformar;
+  -webkit-transición-duración: 0.3s;
+  duración de transición: 0.3s;
+  -webkit-transition-timing-function: facilidad de salida;
+  función de sincronización de transición: facilitación;
+}
+.hvr-underline-revel: hover: before, .hvr-underline-revelar: focus: before, .hvr-underline-revelar: active: before {
+  -webkit-transform: translateY (0);
+  transformar: traducirY (0);
+}
+
+/ * Overline Reveal * /
+.hvr-overline-revelar {
+  pantalla: bloque en línea;
+  alineación vertical: medio;
+  -webkit-transform: perspectiva (1px) translateZ (0);
+  transform: perspectiva (1px) translateZ (0);
+  box-shadow: 0 0 1px rgba (0, 0, 0, 0);
+  posición: relativa;
+  desbordamiento: oculto;
+}
+.hvr-overline-revelar: antes de {
+  contenido: "";
+  posición: absoluta;
+  índice z: -1;
+  izquierda: 0;
+  derecha: 0;
+  arriba: 0;
+  fondo: # 2098D1;
+  altura: 4px;
+  -webkit-transform: translateY (-4px);
+  transformar: traducirY (-4px);
+  -webkit-transition-property: transformar;
+  propiedad de transición: transformar;
+  -webkit-transición-duración: 0.3s;
+  duración de transición: 0.3s;
+  -webkit-transition-timing-function: facilidad de salida;
+  función de sincronización de transición: facilitación;
+}
+.hvr-overline-revelar: hover: antes, .hvr-overline-revelar: enfoque: antes, .hvr-overline-revelar: activo: antes {
+  -webkit-transform: translateY (0);
+  transformar: traducirY (0);
+}
+
+/ * SOMBRA / TRANSICIONES DE ILUMINACIÓN * /
+/* Resplandor */
+.hvr-glow {
+  pantalla: bloque en línea;
+  alineación vertical: medio;
+  -webkit-transform: perspectiva (1px) translateZ (0);
+  transform: perspectiva (1px) translateZ (0);
+  box-shadow: 0 0 1px rgba (0, 0, 0, 0);
+  -webkit-transición-duración: 0.3s;
+  duración de transición: 0.3s;
+  -webkit-transition-property: box-shadow;
+  propiedad de transición: cuadro-sombra;
+}
+.hvr-glow: hover, .hvr-glow: foco, .hvr-glow: activo {
+  box-shad ow: 0 0 8px rgba (0, 0, 0, 0.6);
+}
+
+/ * Sombra * /
+.hvr-shadow {
+  pantalla: bloque en línea;
+  alineación vertical: medio;
+  -webkit-transform: perspectiva (1px) translateZ (0);
+  transform: perspectiva (1px) translateZ (0);
+  box-shadow: 0 0 1px rgba (0, 0, 0, 0);
+  -webkit-transición-duración: 0.3s;
+  duración de transición: 0.3s;
+  -webkit-transition-property: box-shadow;
+  propiedad de transición: cuadro-sombra;
+}
+.hvr-shadow: hover, .hvr-shadow: foco, .hvr-shadow: activo {
+  sombra de cuadro: 0 10px 10px -10px rgba (0, 0, 0, 0.5);
+}
+
+/ * Grow Shadow * /
+.hvr-grow-shadow {
+  pantalla: bloque en línea;
+  alineación vertical: medio;
+  -webkit-transform: perspectiva (1px) translateZ (0);
+  transform: perspectiva (1px) translateZ (0);
+  box-shadow: 0 0 1px rgba (0, 0, 0, 0);
+  -webkit-transición-duración: 0.3s;
+  duración de transición: 0.3s;
+  -webkit-transition-property: box-shadow, transform;
+  propiedad de transición: cuadro-sombra, transformar;
+}
+.hvr-grow-shadow: hover, .hvr-grow-shadow: foco, .hvr-grow-shadow: activo {
+  sombra de cuadro: 0 10px 10px -10px rgba (0, 0, 0, 0.5);
+  -webkit-transform: escala (1.1);
+  transformar: escala (1.1);
+}
+
+/ * Box Shadow Outset * /
+.hvr-box-shadow-outset {
+  pantalla: bloque en línea;
+  alineación vertical: medio;
+  -webkit-transform: perspectiva (1px) translateZ (0);
+  transform: perspectiva (1px) translateZ (0);
+  box-shadow: 0 0 1px rgba (0, 0, 0, 0);
+  -webkit-transición-duración: 0.3s;
+  duración de transición: 0.3s;
+  -webkit-transition-property: box-shadow;
+  propiedad de transición: cuadro-sombra;
+}
+.hvr-box-shadow-outset: hover, .hvr-box-shadow-outset: focus, .hvr-box-shadow-outset: active {
+  cuadro-sombra: 2px 2px 2px rgba (0, 0, 0, 0.6);
+}
+
+/ * Recuadro Shadow Box * /
+.hvr-box-shadow-inset {
+  pantalla: bloque en línea;
+  alineación vertical: medio;
+  -webkit-transform: perspectiva (1px) translateZ (0);
+  transform: perspectiva (1px) translateZ (0);
+  box-shadow: 0 0 1px rgba (0, 0, 0, 0);
+  -webkit-transición-duración: 0.3s;
+  duración de transición: 0.3s;
+  -webkit-transition-property: box-shadow;
+  propiedad de transición: cuadro-sombra;
+  box-shadow: recuadro 0 0 0 rgba (0, 0, 0, 0.6), 0 0 1px rgba (0, 0, 0, 0);
+  / * Hack para mejorar el alias en dispositivos móviles / tabletas * /
+}
+.hvr-box-shadow-inset: hover, .hvr-box-shadow-inset: focus, .hvr-box-shadow-inset: active {
+  box-shadow: recuadro 2px 2px 2px rgba (0, 0, 0, 0.6), 0 0 1px rgba (0, 0, 0, 0);
+  / * Hack para mejorar el alias en dispositivos móviles / tabletas * /
+}
+
+/ * Float Shadow * /
+.hvr-float-shadow {
+  pantalla: bloque en línea;
+  alineación vertical: medio;
+  -webkit-transform: perspectiva (1px) translateZ (0);
+  transform: perspectiva (1px) translateZ (0);
+  box-shadow: 0 0 1px rgba (0, 0, 0, 0);
+  posición: relativa;
+  -webkit-transición-duración: 0.3s;
+  duración de transición: 0.3s;
+  -webkit-transition-property: transformar;
+  propiedad de transición: transformar;
+}
+.hvr-float-shadow: antes de {
+  eventos de puntero: ninguno;
+  posición: absoluta;
+  índice z: -1;
+  contenido: '';
+  Top 100%;
+  izquierda: 5%;
+  altura: 10px;
+  ancho: 90%;
+  opacidad: 0;
+  fondo: -webkit-radial-gradient (centro, elipse, rgba (0, 0, 0, 0.35) 0%, rgba (0, 0, 0, 0) 80%);
+  fondo: gradiente radial (elipse en el centro, rgba (0, 0, 0, 0.35) 0%, rgba (0, 0, 0, 0) 80%);
+  / * W3C * /
+  -webkit-transición-duración: 0.3s;
+  duración de transición: 0.3s;
+  -webkit-transition-property: transformar, opacidad;
+  propiedad de transición: transformación, opacidad;
+}
+.hvr-float-shadow: hover, .hvr-float-shadow: foco, .hvr-float-shadow: activo {
+  -webkit-transform: translateY (-5px);
+  transform: translateY (-5px);
+  / * mover el elemento hacia arriba en 5px * /
+}
+.hvr-float-shadow: hover: before, .hvr-float-shadow: focus: before, .hvr-float-shadow: active: before {
+  opacidad: 1;
+  -webkit-transform: translateY (5px);
+  transform: translateY (5px);
+  / * mueve el elemento hacia abajo en 5px (permanecerá en su lugar porque está unido al elemento que también sube 5px) * /
+}
+
+/ * Shadow Radial * /
+.hvr-shadow-radial {
+  pantalla: bloque en línea;
+  alineación vertical: medio;
+  -webkit-transform: perspectiva (1px) translateZ (0);
+  transform: perspectiva (1px) translateZ (0);
+  box-shadow: 0 0 1px rgba (0, 0, 0, 0);
+  posición: relativa;
+}
+.hvr-shadow-radial: before, .hvr-shadow-radial: after {
+  eventos de puntero: ninguno;
+  posición: absoluta;
+  contenido: '';
+  izquierda: 0;
+  ancho: 100%;
+  tamaño de la caja: border-box;
+  repetición de fondo: sin repetición;
+  altura: 5px;
+  opacidad: 0;
+  -webkit-transición-duración: 0.3s;
+  duración de transición: 0.3s;
+  -webkit-transition-property: opacidad;
+  propiedad de transición: opacidad;
+}
+.hvr-shadow-radial: antes de {
+  parte inferior: 100%;
+  fondo: -webkit-radial-gradient (50% 150%, elipse, rgba (0, 0, 0, 0.6) 0%, rgba (0, 0, 0, 0) 80%);
+  fondo: gradiente radial (elipse al 50% 150%, rgba (0, 0, 0, 0.6) 0%, rgba (0, 0, 0, 0) 80%);
+}
+.hvr-shadow-radial: después de {
+  Top 100%;
+  fondo: -webkit-radial-gradient (50% -50%, elipse, rgba (0, 0, 0, 0.6) 0%, rgba (0, 0, 0, 0) 80%);
+  fondo: gradiente radial (elipse al 50% -50%, rgba (0, 0, 0, 0.6) 0%, rgba (0, 0, 0, 0) 80%);
+}
+.hvr-shadow-radial: hover: before, .hvr-shadow-radial: focus: before, .hvr-shadow-radial: active: before, .hvr-shadow-radial: hover: after, .hvr-shadow-radial : focus: after, .hvr-shadow-radial: active: after {
+  opacidad: 1;
+}
+
+/* GLOBOS DE TEXTO */
+/ * Bubble Top * /
+.hvr-bubble-top {
+  pantalla: bloque en línea;
+  alineación vertical: medio;
+  -webkit-transform: perspectiva (1px) translateZ (0);
+  transform: perspectiva (1px) translateZ (0);
+  box-shadow: 0 0 1px rgba (0, 0, 0, 0);
+  posición: relativa;
+}
+.hvr-bubble-top: antes de {
+  eventos de puntero: ninguno;
+  posición: absoluta;
+  índice z: -1;
+  contenido: '';
+  estilo de borde: sólido;
+  -webkit-transición-duración: 0.3s;
+  duración de transición: 0.3s;
+  -webkit-transition-property: transformar;
+  propiedad de transición: transformar;
+  izquierda: calc (50% - 10px);
+  arriba: 0;
+  ancho de borde: 0 10px 10px 10px;
+  color del borde: transparente transparente # e1e1e1 transparente;
+}
+.hvr-bubble-top: hover: antes, .hvr-bubble-top: foco: antes, .hvr-bubble-top: activo: antes {
+  -webkit-transform: translateY (-10px);
+  transform: translateY (-10px);
+}
+
+/ * Bubble Right * /
+.hvr-bubble-right {
+  pantalla: bloque en línea;
+  alineación vertical: medio;
+  -webkit-transform: perspectiva (1px) translateZ (0);
+  transform: perspectiva (1px) translateZ (0);
+  box-shadow: 0 0 1px rgba (0, 0, 0, 0);
+  posición: relativa;
+}
+.hvr-bubble-right: antes de {
+  eventos de puntero: ninguno;
+  posición: absoluta;
+  índice z: -1;
+  contenido: '';
+  estilo de borde: sólido;
+  -webkit-transición-duración: 0.3s;
+  duración de transición: 0.3s;
+  -webkit-transition-property: transformar;
+  propiedad de transición: transformar;
+  arriba: calc (50% - 10px);
+  derecha: 0;
+  ancho de borde: 10px 0 10px 10px;
+  color del borde: transparente transparente transparente # e1e1e1;
+}
+.hvr-bubble-right: hover: before, .hvr-bubble-right: focus: before, .hvr-bubble-right: active: before {
+  -webkit-transform: translateX (10px);
+  transform: translateX (10px);
+}
+
+/ * Fondo de burbuja * /
+.hvr-bubble-bottom {
+  pantalla: bloque en línea;
+  alineación vertical: medio;
+  -webkit-transform: perspectiva (1px) translateZ (0);
+  transform: perspectiva (1px) translateZ (0);
+  box-shadow: 0 0 1px rgba (0, 0, 0, 0);
+  posición: relativa;
+}
+.hvr-bubble-bottom: antes de {
+  eventos de puntero: ninguno;
+  posición: absoluta;
+  índice z: -1;
+  contenido: '';
+  estilo de borde: sólido;
+  -webkit-transición-duración: 0.3s;
+  duración de transición: 0.3s;
+  -webkit-transition-property: transformar;
+  propiedad de transición: transformar;
+  izquierda: calc (50% - 10px);
+  abajo: 0;
+  ancho de borde: 10px 10px 0 10px;
+  color del borde: # e1e1e1 transparente transparente transparente;
+}
+.hvr-bubble-bottom: hover: before, .hvr-bubble-bottom: focus: before, .hvr-bubble-bottom: active: before {
+  -webkit-transform: translateY (10px);
+  transform: translateY (10px);
+}
+
+/ * Burbuja izquierda * /
+.hvr-bubble-left {
+  pantalla: bloque en línea;
+  alineación vertical: medio;
+  -webkit-transform: perspectiva (1px) translateZ (0);
+  transform: perspectiva (1px) translateZ (0);
+  box-shadow: 0 0 1px rgba (0, 0, 0, 0);
+  posición: relativa;
+}
+.hvr-bubble-left: antes de {
+  eventos de puntero: ninguno;
+  posición: absoluta;
+  índice z: -1;
+  contenido: '';
+  estilo de borde: sólido;
+  -webkit-transición-duración: 0.3s;
+  duración de transición: 0.3s;
+  -webkit-transition-property: transformar;
+  propiedad de transición: transformar;
+  arriba: calc (50% - 10px);
+  izquierda: 0;
+  ancho de borde: 10px 10px 10px 0;
+  color del borde: transparente # e1e1e1 transparente transparente;
+}
+.hvr-bubble-left: hover: before, .hvr-bubble-left: focus: before, .hvr-bubble-left: active: before {
+  -webkit-transform: translateX (-10px);
+  transform: translateX (-10px);
+}
+
+/ * Bubble Float Top * /
+.hvr-bubble-float-top {
+  pantalla: bloque en línea;
+  alineación vertical: medio;
+  -webkit-transform: perspectiva (1px) translateZ (0);
+  transform: perspectiva (1px) translateZ (0);
+  box-shadow: 0 0 1px rgba (0, 0, 0, 0);
+  posición: relativa;
+  -webkit-transición-duración: 0.3s;
+  duración de transición: 0.3s;
+  -webkit-transition-property: transformar;
+  propiedad de transición: transformar;
+}
+.hvr-bubble-float-top: antes de {
+  posición: absoluta;
+  índice z: -1;
+  contenido: '';
+  izquierda: calc (50% - 10px);
+  arriba: 0;
+  estilo de borde: sólido;
+  ancho de borde: 0 10px 10px 10px;
+  color del borde: transparente transparente # e1e1e1 transparente;
+  -webkit-transición-duración: 0.3s;
+  duración de transición: 0.3s;
+  -webkit-transition-property: transformar;
+  propiedad de transición: transformar;
+}
+.hvr-bubble-float-top: hover, .hvr-bubble-float-top: foco, .hvr-bubble-float-top: activo {
+  -webkit-transform: translateY (10px);
+  transform: translateY (10px);
+}
+.hvr-bubble-float-top: hover: before, .hvr-bubble-float-top: focus: before, .hvr-bubble-float-top: active: before {
+  -webkit-transform: translateY (-10px);
+  transform: translateY (-10px);
+}
+
+/ * Bubble Float Right * /
+.hvr-bubble-float-right {
+  pantalla: bloque en línea;
+  alineación vertical: medio;
+  -webkit-transform: perspectiva (1px) translateZ (0);
+  transform: perspectiva (1px) translateZ (0);
+  box-shadow: 0 0 1px rgba (0, 0, 0, 0);
+  posición: relativa;
+  -webkit-transición-duración: 0.3s;
+  duración de transición: 0.3s;
+  -webkit-transition-property: transformar;
+  propiedad de transición: transformar;
+}
+.hvr-bubble-float-right: antes de {
+  posición: absoluta;
+  índice z: -1;
+  arriba: calc (50% - 10px);
+  derecha: 0;
+  contenido: '';
+  estilo de borde: sólido;
+  ancho de borde: 10px 0 10px 10px;
+  color del borde: transparente transparente transparente # e1e1e1;
+  -webkit-transición-duración: 0.3s;
+  duración de transición: 0.3s;
+  -webkit-transition-property: transformar;
+  propiedad de transición: transformar;
+}
+.hvr-bubble-float-right: hover, .hvr-bubble-float-right: foco, .hvr-bubble-float-right: activo {
+  -webkit-transform: translateX (-10px);
+  transform: translateX (-10px);
+}
+.hvr-bubble-float-right: hover: before, .hvr-bubble-float-right: focus: before, .hvr-bubble-float-right: active: before {
+  -webkit-transform: translateX (10px);
+  transform: translateX (10px);
+}
+
+/ * Fondo de flotador de burbuja * /
+.hvr-bubble-float-bottom {
+  pantalla: bloque en línea;
+  alineación vertical: medio;
+  -webkit-transform: perspectiva (1px) translateZ (0);
+  transform: perspectiva (1px) translateZ (0);
+  box-shadow: 0 0 1px rgba (0, 0, 0, 0);
+  posición: relativa;
+  -webkit-transición-duración: 0.3s;
+  duración de transición: 0.3s;
+  -webkit-transition-property: transformar;
+  propiedad de transición: transformar;
+}
+.hvr-bubble-float-bottom: antes de {
+  posición: absoluta;
+  índice z: -1;
+  contenido: '';
+  izquierda: calc (50% - 10px);
+  abajo: 0;
+  estilo de borde: sólido;
+  ancho de borde: 10px 10px 0 10px;
+  color del borde: # e1e1e1 transparente transparente transparente;
+  -webkit-transición-duración: 0.3s;
+  duración de transición: 0.3s;
+  -webkit-transition-property: transformar;
+  propiedad de transición: transformar;
+}
+.hvr-bubble-float-bottom: hover, .hvr-bubble-float-bottom: foco, .hvr-bubble-float-bottom: activo {
+  -webkit-transform: translateY (-10px);
+  transform: translateY (-10px);
+}
+.hvr-bubble-float-bottom: hover: before, .hvr-bubble-float-bottom: focus: before, .hvr-bubble-float-bottom: active: before {
+  -webkit-transform: translateY (10px);
+  transform: translateY (10px);
+}
+
+/ * Burbuja flotante izquierda * /
+.hvr-bubble-float-left {
+  pantalla: bloque en línea;
+  alineación vertical: medio;
+  -webkit-transform: perspectiva (1px) translateZ (0);
+  transform: perspectiva (1px) translateZ (0);
+  box-shadow: 0 0 1px rgba (0, 0, 0, 0);
+  posición: relativa;
+  -webkit-transición-duración: 0.3s;
+  duración de transición: 0.3s;
+  -webkit-transition-property: transformar;
+  propiedad de transición: transformar;
+}
+.hvr-bubble-float-left: antes de {
+  posición: absoluta;
+  índice z: -1;
+  contenido: '';
+  arriba: calc (50% - 10px);
+  izquierda: 0;
+  estilo de borde: sólido;
+  ancho de borde: 10px 10px 10px 0;
+  color del borde: transparente # e1e1e1 transparente transparente;
+  -webkit-transición-duración: 0.3s;
+  duración de transición: 0.3s;
+  -webkit-transition-property: transformar;
+  propiedad de transición: transformar;
+}
+.hvr-bubble-float-left: hover, .hvr-bubble-float-left: foco, .hvr-bubble-float-left: activo {
+  -webkit-transform: translateX (10px);
+  transform: translateX (10px);
+}
+.hvr-bubble-float-left: hover: before, .hvr-bubble-float-left: focus: before, .hvr-bubble-float-left: active: before {
+  -webkit-transform: translateX (-10px);
+  transform: translateX (-10px);
+}
+
+/ * ICONOS * /
+/ * Icono Atrás * /
+.hvr-icon-back {
+  pantalla: bloque en línea;
+  alineación vertical: medio;
+  -webkit-transform: perspectiva (1px) translateZ (0);
+  transform: perspectiva (1px) translateZ (0);
+  box-shadow: 0 0 1px rgba (0, 0, 0, 0);
+  -webkit-transición-duración: 0.1s;
+  duración de transición: 0.1s;
+}
+.hvr-icon-back .hvr-icon {
+  -webkit-transform: translateZ (0);
+  transformar: traducirZ (0);
+  -webkit-transición-duración: 0.1s;
+  duración de transición: 0.1s;
+  -webkit-transition-property: transformar;
+  propiedad de transición: transformar;
+  -webkit-transition-timing-function: facilidad de salida;
+  función de sincronización de transición: facilitación;
+}
+.hvr-icon-back: coloca el cursor sobre .hvr-icon, .hvr-icon-back: focus .hvr-icon, .hvr-icon-back: active .hvr-icon {
+  -webkit-transform: translateX (-4px);
+  transformar: traducirX (-4px);
+}
+
+/ * Icono de reenvío * /
+.hvr-icon-forward {
+  pantalla: bloque en línea;
+  alineación vertical: medio;
+  -webkit-transform: perspectiva (1px) translateZ (0);
+  transform: perspectiva (1px) translateZ (0);
+  box-shadow: 0 0 1px rgba (0, 0, 0, 0);
+  -webkit-transición-duración: 0.1s;
+  duración de transición: 0.1s;
+}
+.hvr-icon-forward .hvr-icon {
+  -webkit-transform: translateZ (0);
+  transformar: traducirZ (0);
+  -webkit-transición-duración: 0.1s;
+  duración de transición: 0.1s;
+  -webkit-transition-property: transformar;
+  propiedad de transición: transformar;
+  -webkit-transition-timing-function: facilidad de salida;
+  función de sincronización de transición: facilitación;
+}
+.hvr-icon-forward: desplace el mouse .hvr-icon, .hvr-icon-forward: foco .hvr-icon, .hvr-icon-forward: active .hvr-icon {
+  -webkit-transform: translateX (4px);
+  transform: translateX (4px);
+}
+
+/ * Icono abajo * /
+@ -webkit-keyframes hvr-icon-down {
+  0%
+	50%
+	100% {
+    -webkit-transform: translateY (0);
+    transformar: traducirY (0);
+  }
+  25%
+	75% {
+    -webkit-transform: translateY (6px);
+    transform: translateY (6px);
+  }
+}
+@keyframes hvr-icon-down {
+  0%
+	50%
+	100% {
+    -webkit-transform: translateY (0);
+    transformar: traducirY (0);
+  }
+  25%
+	75% {
+    -webkit-transform: translateY (6px);
+    transform: translateY (6px);
+  }
+}
+/ * Icono abajo * /
+.hvr-icon-down {
+  pantalla: bloque en línea;
+  alineación vertical: medio;
+  -webkit-transform: perspectiva (1px) translateZ (0);
+  transform: perspectiva (1px) translateZ (0);
+  box-shadow: 0 0 1px rgba (0, 0, 0, 0);
+}
+.hvr-icon-down .hvr-icon {
+  -webkit-transform: translateZ (0);
+  transformar: traducirZ (0);
+}
+.hvr-icon-down: coloca el cursor sobre .hvr-icon, .hvr-icon-down: foco .hvr-icon, .hvr-icon-down: active .hvr-icon {
+  -webkit-animation-name: hvr-icon-down;
+  nombre-animación: hvr-icon-down;
+  -webkit-animation-duración: 0.75s;
+  duración de la animación: 0,75 s;
+  -webkit-animation-timing-function: facilidad de salida;
+  función de sincronización de animación: facilitación;
+}
+
+/ * Ícono arriba * /
+@ -webkit-keyframes hvr-icon-up {
+  0%
+	50%
+	100% {
+    -webkit-transform: translateY (0);
+    transformar: traducirY (0);
+  }
+  25%
+	75% {
+    -webkit-transform: translateY (-6px);
+    transform: translateY (-6px);
+  }
+}
+@keyframes hvr-icon-up {
+  0%
+	50%
+	100% {
+    -webkit-transform: translateY (0);
+    transformar: traducirY (0);
+  }
+  25%
+	75% {
+    -webkit-transform: translateY (-6px);
+    transform: translateY (-6px);
+  }
+}
+/ * Ícono arriba * /
+.hvr-icon-up {
+  pantalla: bloque en línea;
+  alineación vertical: medio;
+  -webkit-transform: perspectiva (1px) translateZ (0);
+  transform: perspectiva (1px) translateZ (0);
+  box-shadow: 0 0 1px rgba (0, 0, 0, 0);
+}
+.hvr-icon-up .hvr-icon {
+  -webkit-transform: translateZ (0);
+  transformar: traducirZ (0);
+}
+.hvr-icon-up: desplace el mouse .hvr-icon, .hvr-icon-up: foco .hvr-icon, .hvr-icon-up: active .hvr-icon {
+  -webkit-animation-name: hvr-icon-up;
+  nombre-animación: hvr-icon-up;
+  -webkit-animation-duración: 0.75s;
+  duración de la animación: 0,75 s;
+  -webkit-animation-timing-function: facilidad de salida;
+  función de sincronización de animación: facilitación;
+}
+
+/ * Icon Spin * /
+.hvr-icon-spin {
+  pantalla: bloque en línea;
+  alineación vertical: medio;
+  -webkit-transform: perspectiva (1px) translateZ (0);
+  transform: perspectiva (1px) translateZ (0);
+  box-shadow: 0 0 1px rgba (0, 0, 0, 0);
+}
+.hvr-icon-spin .hvr-icon {
+  -webkit-transición-duración: 1s;
+  duración de transición: 1s;
+  -webkit-transition-property: transformar;
+  propiedad de transición: transformar;
+  -webkit-transition-timing-function: facilidad de entrada;
+  función de sincronización de transición: facilidad de entrada y salida;
+}
+.hvr-icon-spin: coloca el cursor sobre .hvr-icon, .hvr-icon-spin: focus .hvr-icon, .hvr-icon-spin: active .hvr-icon {
+  -webkit-transform: rotar (360 grados);
+  transformar: rotar (360 grados);
+}
+
+/ * Icon Drop * /
+@ -webkit-keyframes hvr-icon-drop {
+  0% {
+    opacidad: 0;
+  }
+  50% {
+    opacidad: 0;
+    -webkit-transform: translateY (-100%);
+    transformar: traducirY (-100%);
+  }
+  51%,
+	100% {
+    opacidad: 1;
+  }
+}
+@keyframes hvr-icon-drop {
+  0% {
+    opacidad: 0;
+  }
+  50% {
+    opacidad: 0;
+    -webkit-transform: translateY (-100%);
+    transformar: traducirY (-100%);
+  }
+  51%,
+	100% {
+    opacidad: 1;
+  }
+}
+/ * Icon Drop * /
+.hvr-icon-drop {
+  pantalla: bloque en línea;
+  alineación vertical: medio;
+  -webkit-transform: perspectiva (1px) translateZ (0);
+  transform: perspectiva (1px) translateZ (0);
+  box-shadow: 0 0 1px rgba (0, 0, 0, 0);
+}
+.hvr-icon-drop .hvr-icon {
+  -webkit-transform: translateZ (0);
+  transformar: traducirZ (0);
+}
+.hvr-icon-drop: coloca el cursor sobre .hvr-icon, .hvr-icon-drop: focus .hvr-icon, .hvr-icon-drop: active .hvr-icon {
+  opacidad: 0;
+  -webkit-transición-duración: 0.3s;
+  duración de transición: 0.3s;
+  -webkit-animation-name: hvr-icon-drop;
+  nombre-animación: hvr-icon-drop;
+  -webkit-animation-duración: 0.5s;
+  duración de la animación: 0.5s;
+  -webkit-animation-delay: 0.3s;
+  animación-delay: 0.3s;
+  -webkit-animation-fill-mode: reenviar;
+  modo de relleno de animación: hacia adelante;
+  -webkit-animation-timing-function: facilidad de entrada;
+  función de sincronización de animación: facilidad de entrada y salida;
+  -webkit-animation-timing-function: cubic-bezier (0.52, 1.64, 0.37, 0.66);
+  función de sincronización de animación: cubic-bezier (0.52, 1.64, 0.37, 0.66);
+}
+
+/ * Icon Fade * /
+.hvr-icon-fade {
+  pantalla: bloque en línea;
+  alineación vertical: medio;
+  -webkit-transform: perspectiva (1px) translateZ (0);
+  transform: perspectiva (1px) translateZ (0);
+  box-shadow: 0 0 1px rgba (0, 0, 0, 0);
+}
+.hvr-icon-fade .hvr-icon {
+  -webkit-transform: translateZ (0);
+  transformar: traducirZ (0);
+  -webkit-transición-duración: 0.5s;
+  duración de transición: 0.5s;
+  -webkit-transition-property: color;
+  propiedad de transición: color;
+}
+.hvr-icon-fade: coloca el cursor sobre .hvr-icon, .hvr-icon-fade: focus .hvr-icon, .hvr-icon-fade: active .hvr-icon {
+  color: # 0F9E5E;
+}
+
+/ * Icono flotante lejos * /
+@ -webkit-keyframes hvr-icon-float-away {
+  0% {
+    opacidad: 1;
+  }
+  100% {
+    opacidad: 0;
+    -webkit-transform: translateY (-1em);
+    transformar: traducirY (-1em);
+  }
+}
+@keyframes hvr-icon-float-away {
+  0% {
+    opacidad: 1;
+  }
+  100% {
+    opacidad: 0;
+    -webkit-transform: translateY (-1em);
+    transformar: traducirY (-1em);
+  }
+}
+/ * Icono flotante lejos * /
+.hvr-icon-float-away {
+  pantalla: bloque en línea;
+  alineación vertical: medio;
+  -webkit-transform: perspectiva (1px) translateZ (0);
+  transform: perspectiva (1px) translateZ (0);
+  box-shadow: 0 0 1px rgba (0, 0, 0, 0);
+}
+.hvr-icon-float-away .hvr-icon {
+  -webkit-transform: translateZ (0);
+  transformar: traducirZ (0);
+  -webkit-animation-duración: 0.5s;
+  duración de la animación: 0.5s;
+  -webkit-animation-fill-mode: reenviar;
+  modo de relleno de animación: hacia adelante;
+}
+.hvr-icon-float-away: coloca el cursor sobre .hvr-icon, .hvr-icon-float-away: focus .hvr-icon, .hvr-icon-float-away: active .hvr-icon {
+  -webkit-animation-name: hvr-icon-float-away;
+  nombre-animación: hvr-icon-float-away;
+  -webkit-animation-timing-function: facilidad de salida;
+  función de sincronización de animación: facilitación;
+}
+
+/ * Icon Sink Away * /
+@ -webkit-keyframes hvr-icon-sink-away {
+  0% {
+    opacidad: 1;
+  }
+  100% {
+    opacidad: 0;
+    -webkit-transform: translateY (1em);
+    transform: translateY (1em);
+  }
+}
+@keyframes hvr-icon-sink-away {
+  0% {
+    opacidad: 1;
+  }
+  100% {
+    opacidad: 0;
+    -webkit-transform: translateY (1em);
+    transform: translateY (1em);
+  }
+}
+/ * Icon Sink Away * /
+.hvr-icon-sink-away {
+  pantalla: bloque en línea;
+  alineación vertical: medio;
+  -webkit-transform: perspectiva (1px) translateZ (0);
+  transform: perspectiva (1px) translateZ (0);
+  box-shadow: 0 0 1px rgba (0, 0, 0, 0);
+}
+.hvr-icon-sink-away .hvr-icon {
+  -webkit-transform: translateZ (0);
+  transformar: traducirZ (0);
+  -webkit-animation-duración: 0.5s;
+  duración de la animación: 0.5s;
+  -webkit-animation-fill-mode: reenviar;
+  modo de relleno de animación: hacia adelante;
+}
+.hvr-icon-sink-away: coloca el cursor sobre .hvr-icon, .hvr-icon-sink-away: focus .hvr-icon, .hvr-icon-sink-away: active .hvr-icon {
+  -webkit-animation-name: hvr-icon-sink-away;
+  nombre-animación: hvr-icon-sink-away;
+  -webkit-animation-timing-function: facilidad de salida;
+  función de sincronización de animación: facilitación;
+}
+
+/ * Icon Grow * /
+.hvr-icon-grow {
+  pantalla: bloque en línea;
+  alineación vertical: medio;
+  -webkit-transform: perspectiva (1px) translateZ (0);
+  transform: perspectiva (1px) translateZ (0);
+  box-shadow: 0 0 1px rgba (0, 0, 0, 0);
+  -webkit-transición-duración: 0.3s;
+  duración de transición: 0.3s;
+}
+.hvr-icon-grow .hvr-icon {
+  -webkit-transform: translateZ (0);
+  transformar: traducirZ (0);
+  -webkit-transición-duración: 0.3s;
+  duración de transición: 0.3s;
+  -webkit-transition-property: transformar;
+  propiedad de transición: transformar;
+  -webkit-transition-timing-function: facilidad de salida;
+  función de sincronización de transición: facilitación;
+}
+.hvr-icon-grow: coloca el cursor sobre .hvr-icon, .hvr-icon-grow: focus .hvr-icon, .hvr-icon-grow: active .hvr-icon {
+  -webkit-transform: escala (1.3) translateZ (0);
+  transformar: escala (1.3) translateZ (0);
+}
+
+/ * Icon Shrink * /
+.hvr-icon-shrink {
+  pantalla: bloque en línea;
+  alineación vertical: medio;
+  -webkit-transform: perspectiva (1px) translateZ (0);
+  transform: perspectiva (1px) translateZ (0);
+  box-shadow: 0 0 1px rgba (0, 0, 0, 0);
+  -webkit-transición-duración: 0.3s;
+  duración de transición: 0.3s;
+}
+.hvr-icon-shrink .hvr-icon {
+  -webkit-transform: translateZ (0);
+  transformar: traducirZ (0);
+  -webkit-transición-duración: 0.3s;
+  duración de transición: 0.3s;
+  -webkit-transition-property: transformar;
+  propiedad de transición: transformar;
+  -webkit-transition-timing-function: facilidad de salida;
+  función de sincronización de transición: facilitación;
+}
+.hvr-icon-shrink: hover .hvr-icon, .hvr-icon-shrink: focus .hvr-icon, .hvr-icon-shrink: active .hvr-icon {
+  -webkit-transform: escala (0.8);
+  transformar: escala (0.8);
+}
+
+/ * Icon Pulse * /
+@ -webkit-keyframes hvr-icon-pulse {
+  25% {
+    -webkit-transform: escala (1.3);
+    transformar: escala (1.3);
+  }
+  75% {
+    -webkit-transform: escala (0.8);
+    transformar: escala (0.8);
+  }
+}
+@keyframes hvr-icon-pulse {
+  25% {
+    -webkit-transform: escala (1.3);
+    transformar: escala (1.3);
+  }
+  75% {
+    -webkit-transform: escala (0.8);
+    transformar: escala (0.8);
+  }
+}
+.hvr-icon-pulse {
+  pantalla: bloque en línea;
+  alineación vertical: medio;
+  -webkit-transform: perspectiva (1px) translateZ (0);
+  transform: perspectiva (1px) translateZ (0);
+  box-shadow: 0 0 1px rgba (0, 0, 0, 0);
+}
+.hvr-icon-pulse .hvr-icon {
+  -webkit-transform: translateZ (0);
+  transformar: traducirZ (0);
+  -webkit-transition-timing-function: facilidad de salida;
+  función de sincronización de transición: facilitación;
+}
+.hvr-icon-pulse: coloca el cursor sobre .hvr-icon, .hvr-icon-pulse: focus .hvr-icon, .hvr-icon-pulse: active .hvr-icon {
+  -webkit-animation-name: hvr-icon-pulse;
+  nombre-animación: hvr-icon-pulse;
+  -webkit-animation-duración: 1s;
+  duración de la animación: 1s;
+  -webkit-animation-timing-function: lineal;
+  función de sincronización de animación: lineal;
+  -webkit-animation-iteration-count: infinito;
+  animación-recuento-iteración: infinito;
+}
+
+/ * Icon Pulse Grow * /
+@ -webkit-keyframes hvr-icon-pulse-grow {
+  a {
+    -webkit-transform: escala (1.3);
+    transformar: escala (1.3);
+  }
+}
+@keyframes hvr-icon-pulse-grow {
+  a {
+    -webkit-transform: escala (1.3);
+    transformar: escala (1.3);
+  }
+}
+.hvr-icon-pulse-grow {
+  pantalla: bloque en línea;
+  alineación vertical: medio;
+  -webkit-transform: perspectiva (1px) translateZ (0);
+  transform: perspectiva (1px) translateZ (0);
+  box-shadow: 0 0 1px rgba (0, 0, 0, 0);
+}
+.hvr-icon-pulse-grow .hvr-icon {
+  -webkit-transform: translateZ (0);
+  transformar: traducirZ (0);
+  -webkit-transition-timing-function: facilidad de salida;
+  función de sincronización de transición: facilitación;
+}
+.hvr-icon-pulse-grow: coloca el cursor sobre .hvr-icon, .hvr-icon-pulse-grow: focus .hvr-icon, .hvr-icon-pulse-grow: active .hvr-icon {
+  -webkit-animation-name: hvr-icon-pulse-grow;
+  nombre-animación: hvr-icon-pulse-grow;
+  -webkit-animation-duración: 0.3s;
+  duración de la animación: 0.3s;
+  -webkit-animation-timing-function: lineal;
+  función de sincronización de animación: lineal;
+  -webkit-animation-iteration-count: infinito;
+  animación-recuento-iteración: infinito;
+  -webkit-animation-direction: alternativo;
+  dirección de animación: alternativa;
+}
+
+/ * Icon Pulse Shrink * /
+@ -webkit-keyframes hvr-icon-pulse-shrink {
+  a {
+    -webkit-transform: escala (0.8);
+    transformar: escala (0.8);
+  }
+}
+@keyframes hvr-icon-pulse-shrink {
+  a {
+    -webkit-transform: escala (0.8);
+    transformar: escala (0.8);
+  }
+}
+.hvr-icon-pulse-shrink {
+  pantalla: bloque en línea;
+  alineación vertical: medio;
+  -webkit-transform: perspectiva (1px) translateZ (0);
+  transform: perspectiva (1px) translateZ (0);
+  box-shadow: 0 0 1px rgba (0, 0, 0, 0);
+}
+.hvr-icon-pulse-shrink .hvr-icon {
+  -webkit-transform: translateZ (0);
+  transformar: traducirZ (0);
+  -webkit-transition-timing-function: facilidad de salida;
+  función de sincronización de transición: facilitación;
+}
+.hvr-icon-pulse-shrink: coloca el cursor sobre .hvr-icon, .hvr-icon-pulse-shrink: focus .hvr-icon, .hvr-icon-pulse-shrink: active .hvr-icon {
+  -webkit-animation-name: hvr-icon-pulse-shrink;
+  nombre-animación: hvr-icon-pulse-shrink;
+  -webkit-animation-duración: 0.3s;
+  duración de la animación: 0.3s;
+  -webkit-animation-timing-function: lineal;
+  función de sincronización de animación: lineal;
+  -webkit-animation-iteration-count: infinito;
+  animación-recuento-iteración: infinito;
+  -webkit-animation-direction: alternativo;
+  dirección de animación: alternativa;
+}
+
+/ * Ícono Push * /
+@ -webkit-keyframes hvr-icon-push {
+  50% {
+    -webkit-transform: escala (0.5);
+    transformar: escala (0.5);
+  }
+}
+@keyframes hvr-icon-push {
+  50% {
+    -webkit-transform: escala (0.5);
+    transformar: escala (0.5);
+  }
+}
+.hvr-icon-push {
+  pantalla: bloque en línea;
+  alineación vertical: medio;
+  -webkit-transform: perspectiva (1px) translateZ (0);
+  transform: perspectiva (1px) translateZ (0);
+  box-shadow: 0 0 1px rgba (0, 0, 0, 0);
+  -webkit-transición-duración: 0.3s;
+  duración de transición: 0.3s;
+}
+.hvr-icon-push .hvr-icon {
+  -webkit-transform: translateZ (0);
+  transformar: traducirZ (0);
+  -webkit-transición-duración: 0.3s;
+  duración de transición: 0.3s;
+  -webkit-transition-property: transformar;
+  propiedad de transición: transformar;
+  -webkit-transition-timing-function: facilidad de salida;
+  función de sincronización de transición: facilitación;
+}
+.hvr-icon-push: coloca el cursor sobre .hvr-icon, .hvr-icon-push: focus .hvr-icon, .hvr-icon-push: active .hvr-icon {
+  -webkit-animation-name: hvr-icon-push;
+  nombre-animación: hvr-icon-push;
+  -webkit-animation-duración: 0.3s;
+  duración de la animación: 0.3s;
+  -webkit-animation-timing-function: lineal;
+  función de sincronización de animación: lineal;
+  -webkit-animation-iteration-count: 1;
+  animación-iteración-cuenta: 1;
+}
+
+/ * Icon Pop * /
+@ -webkit-keyframes hvr-icon-pop {
+  50% {
+    -webkit-transform: escala (1.5);
+    transformar: escala (1.5);
+  }
+}
+@keyframes hvr-icon-pop {
+  50% {
+    -webkit-transform: escala (1.5);
+    transformar: escala (1.5);
+  }
+}
+.hvr-icon-pop {
+  pantalla: bloque en línea;
+  alineación vertical: medio;
+  -webkit-transform: perspectiva (1px) translateZ (0);
+  transform: perspectiva (1px) translateZ (0);
+  box-shadow: 0 0 1px rgba (0, 0, 0, 0);
+  -webkit-transición-duración: 0.3s;
+  duración de transición: 0.3s;
+}
+.hvr-icon-pop .hvr-icon {
+  -webkit-transform: translateZ (0);
+  transformar: traducirZ (0);
+  -webkit-transición-duración: 0.3s;
+  duración de transición: 0.3s;
+  -webkit-transition-property: transformar;
+  propiedad de transición: transformar;
+  -webkit-transition-timing-function: facilidad de salida;
+  función de sincronización de transición: facilitación;
+}
+.hvr-icon-pop: coloca el cursor sobre .hvr-icon, .hvr-icon-pop: focus .hvr-icon, .hvr-icon-pop: active .hvr-icon {
+  -webkit-animation-name: hvr-icon-pop;
+  nombre-animación: hvr-icon-pop;
+  -webkit-animation-duración: 0.3s;
+  duración de la animación: 0.3s;
+  -webkit-animation-timing-function: lineal;
+  función de sincronización de animación: lineal;
+  -webkit-animation-iteration-count: 1;
+  animación-iteración-cuenta: 1;
+}
+
+/ * Rebote de iconos * /
+.hvr-icon-bounce {
+  pantalla: bloque en línea;
+  alineación vertical: medio;
+  -webkit-transform: perspectiva (1px) translateZ (0);
+  transform: perspectiva (1px) translateZ (0);
+  box-shadow: 0 0 1px rgba (0, 0, 0, 0);
+  -webkit-transición-duración: 0.3s;
+  duración de transición: 0.3s;
+}
+.hvr-icon-bounce .hvr-icon {
+  -webkit-transform: translateZ (0);
+  transformar: traducirZ (0);
+  -webkit-transición-duración: 0.3s;
+  duración de transición: 0.3s;
+  -webkit-transition-property: transformar;
+  propiedad de transición: transformar;
+  -webkit-transition-timing-function: facilidad de salida;
+  función de sincronización de transición: facilitación;
+}
+.hvr-icon-bounce: coloca el cursor sobre .hvr-icon, .hvr-icon-bounce: focus .hvr-icon, .hvr-icon-bounce: active .hvr-icon {
+  -webkit-transform: escala (1.5);
+  transformar: escala (1.5);
+  -webkit-transition-timing-function: cubic-bezier (0.47, 2.02, 0.31, -0.36);
+  función de sincronización de transición: cubic-bezier (0.47, 2.02, 0.31, -0.36);
+}
+
+/ * Icono Girar * /
+.hvr-icon-rotate {
+  pantalla: bloque en línea;
+  alineación vertical: medio;
+  -webkit-transform: perspectiva (1px) translateZ (0);
+  transform: perspectiva (1px) translateZ (0);
+  box-shadow: 0 0 1px rgba (0, 0, 0, 0);
+  -webkit-transición-duración: 0.3s;
+  duración de transición: 0.3s;
+}
+.hvr-icon-rotate .hvr-icon {
+  -webkit-transform: translateZ (0);
+  transformar: traducirZ (0);
+  -webkit-transición-duración: 0.3s;
+  duración de transición: 0.3s;
+  -webkit-transition-property: transformar;
+  propiedad de transición: transformar;
+  -webkit-transition-timing-function: facilidad de salida;
+  función de sincronización de transición: facilitación;
+}
+.hvr-icon-rotate: coloca el cursor sobre .hvr-icon, .hvr-icon-rotate: focus .hvr-icon, .hvr-icon-rotate: active .hvr-icon {
+  -webkit-transform: rotar (20deg);
+  transformar: rotar (20deg);
+}
+
+/ * Icon Grow Rotate * /
+.hvr-icon-grow-rotate {
+  pantalla: bloque en línea;
+  alineación vertical: medio;
+  -webkit-transform: perspectiva (1px) translateZ (0);
+  transform: perspectiva (1px) translateZ (0);
+  box-shadow: 0 0 1px rgba (0, 0, 0, 0);
+  -webkit-transición-duración: 0.3s;
+  duración de transición: 0.3s;
+}
+.hvr-icon-grow-rotate .hvr-icon {
+  -webkit-transform: translateZ (0);
+  transformar: traducirZ (0);
+  -webkit-transición-duración: 0.3s;
+  duración de transición: 0.3s;
+  -webkit-transition-property: transformar;
+  propiedad de transición: transformar;
+  -webkit-transition-timing-function: facilidad de salida;
+  función de sincronización de transición: facilitación;
+}
+.hvr-icon-grow-rotate: coloca el cursor sobre .hvr-icon, .hvr-icon-grow-rotate: focus .hvr-icon, .hvr-icon-grow-rotate: active .hvr-icon {
+  -webkit-transform: escala (1.5) rotar (12deg);
+  transformar: escala (1.5) rotar (12deg);
+}
+
+/ * Icono de flotación * /
+.hvr-icon-float {
+  pantalla: bloque en línea;
+  alineación vertical: medio;
+  -webkit-transform: perspectiva (1px) translateZ (0);
+  transform: perspectiva (1px) translateZ (0);
+  box-shadow: 0 0 1px rgba (0, 0, 0, 0);
+  -webkit-transición-duración: 0.3s;
+  duración de transición: 0.3s;
+}
+.hvr-icon-float .hvr-icon {
+  -webkit-transform: translateZ (0);
+  transformar: traducirZ (0);
+  -webkit-transición-duración: 0.3s;
+  duración de transición: 0.3s;
+  -webkit-transition-property: transformar;
+  propiedad de transición: transformar;
+  -webkit-transition-timing-function: facilidad de salida;
+  función de sincronización de transición: facilitación;
+}
+.hvr-icon-float: coloca el cursor sobre .hvr-icon, .hvr-icon-float: focus .hvr-icon, .hvr-icon-float: active .hvr-icon {
+  -webkit-transform: translateY (-4px);
+  transformar: traducirY (-4px);
+}
+
+/ * Icono de sumidero * /
+.hvr-icon-sink {
+  pantalla: bloque en línea;
+  alineación vertical: medio;
+  -webkit-transform: perspectiva (1px) translateZ (0);
+  transform: perspectiva (1px) translateZ (0);
+  box-shadow: 0 0 1px rgba (0, 0, 0, 0);
+  -webkit-transición-duración: 0.3s;
+  duración de transición: 0.3s;
+}
+.hvr-icon-sink .hvr-icon {
+  -webkit-transform: translateZ (0);
+  transformar: traducirZ (0);
+  -webkit-transición-duración: 0.3s;
+  duración de transición: 0.3s;
+  -webkit-transition-property: transformar;
+  propiedad de transición: transformar;
+  -webkit-transition-timing-function: facilidad de salida;
+  función de sincronización de transición: facilitación;
+}
+.hvr-icon-sink: coloca el cursor sobre .hvr-icon, .hvr-icon-sink: focus .hvr-icon, .hvr-icon-sink: active .hvr-icon {
+  -webkit-transform: translateY (4px);
+  transform: translateY (4px);
+}
+
+/ * Icon Bob * /
+@ -webkit-keyframes hvr-icon-bob {
+  0% {
+    -webkit-transform: translateY (-6px);
+    transform: translateY (-6px);
+  }
+  50% {
+    -webkit-transform: translateY (-2px);
+    transform: translateY (-2px);
+  }
+  100% {
+    -webkit-transform: translateY (-6px);
+    transform: translateY (-6px);
+  }
+}
+@keyframes hvr-icon-bob {
+  0% {
+    -webkit-transform: translateY (-6px);
+    transform: translateY (-6px);
+  }
+  50% {
+    -webkit-transform: translateY (-2px);
+    transform: translateY (-2px);
+  }
+  100% {
+    -webkit-transform: translateY (-6px);
+    transform: translateY (-6px);
+  }
+}
+@ -webkit-keyframes hvr-icon-bob-float {
+  100% {
+    -webkit-transform: translateY (-6px);
+    transform: translateY (-6px);
+  }
+}
+@keyframes hvr-icon-bob-float {
+  100% {
+    -webkit-transform: translateY (-6px);
+    transform: translateY (-6px);
+  }
+}
+.hvr-icon-bob {
+  pantalla: bloque en línea;
+  alineación vertical: medio;
+  -webkit-transform: perspectiva (1px) translateZ (0);
+  transform: perspectiva (1px) translateZ (0);
+  box-shadow: 0 0 1px rgba (0, 0, 0, 0);
+  -webkit-transición-duración: 0.3s;
+  duración de transición: 0.3s;
+}
+.hvr-icon-bob .hvr-icon {
+  -webkit-transform: translateZ (0);
+  transformar: traducirZ (0);
+}
+.hvr-icon-bob: hover .hvr-icon, .hvr-icon-bob: focus .hvr-icon, .hvr-icon-bob: active .hvr-icon {
+  -webkit-animation-name: hvr-icon-bob-float, hvr-icon-bob;
+  nombre-animación: hvr-icon-bob-float, hvr-icon-bob;
+  -webkit-animation-duración: .3s, 1.5s;
+  duración de la animación: .3s, 1.5s;
+  -webkit-animation-delay: 0s, .3s;
+  animación-delay: 0s, .3s;
+  -webkit-animation-timing-function: facilidad de salida, facilidad de entrada;
+  función de sincronización de animación: facilidad, facilidad de entrada;
+  -webkit-animation-iteration-count: 1, infinito;
+  animación-iteración-cuenta: 1, infinito;
+  -webkit-animation-fill-mode: reenviar;
+  modo de relleno de animación: hacia adelante;
+  -webkit-animation-direction: normal, alternativo;
+  dirección de animación: normal, alternativa;
+}
+
+/ * Icon Hang * /
+@ -webkit-keyframes hvr-icon-hang {
+  0% {
+    -webkit-transform: translateY (6px);
+    transform: translateY (6px);
+  }
+  50% {
+    -webkit-transform: translateY (2px);
+    transform: translateY (2px);
+  }
+  100% {
+    -webkit-transform: translateY (6px);
+    transform: translateY (6px);
+  }
+}
+@keyframes hvr-icon-hang {
+  0% {
+    -webkit-transform: translateY (6px);
+    transform: translateY (6px);
+  }
+  50% {
+    -webkit-transform: translateY (2px);
+    transform: translateY (2px);
+  }
+  100% {
+    -webkit-transform: translateY (6px);
+    transform: translateY (6px);
+  }
+}
+@ -webkit-keyframes hvr-icon-hang-sink {
+  100% {
+    -webkit-transform: translateY (6px);
+    transform: translateY (6px);
+  }
+}
+@keyframes hvr-icon-hang-sink {
+  100% {
+    -webkit-transform: translateY (6px);
+    transform: translateY (6px);
+  }
+}
+.hvr-icon-hang {
+  pantalla: bloque en línea;
+  alineación vertical: medio;
+  -webkit-transform: perspectiva (1px) translateZ (0);
+  transform: perspectiva (1px) translateZ (0);
+  box-shadow: 0 0 1px rgba (0, 0, 0, 0);
+  -webkit-transición-duración: 0.3s;
+  duración de transición: 0.3s;
+}
+.hvr-icon-hang .hvr-icon {
+  -webkit-transform: translateZ (0);
+  transformar: traducirZ (0);
+}
+.hvr-icon-hang: coloca el cursor sobre .hvr-icon, .hvr-icon-hang: focus .hvr-icon, .hvr-icon-hang: active .hvr-icon {
+  -webkit-animation-name: hvr-icon-hang-sink, hvr-icon-hang;
+  nombre-animación: hvr-icon-hang-sink, hvr-icon-hang;
+  -webkit-animation-duración: .3s, 1.5s;
+  duración de la animación: .3s, 1.5s;
+  -webkit-animation-delay: 0s, .3s;
+  animación-delay: 0s, .3s;
+  -webkit-animation-timing-function: facilidad de salida, facilidad de entrada;
+  función de sincronización de animación: facilidad, facilidad de entrada;
+  -webkit-animation-iteration-count: 1, infinito;
+  animación-iteración-cuenta: 1, infinito;
+  -webkit-animation-fill-mode: reenviar;
+  modo de relleno de animación: hacia adelante;
+  -webkit-animation-direction: normal, alternativo;
+  dirección de animación: normal, alternativa;
+}
+
+/ * Icon Wobble Horizontal * /
+@ -webkit-keyframes hvr-icon-wobble-horizontal {
+  16,65% {
+    -webkit-transform: translateX (6px);
+    transform: translateX (6px);
+  }
+  33,3% {
+    -webkit-transform: translateX (-5px);
+    transform: translateX (-5px);
+  }
+  49.95% {
+    -webkit-transform: translateX (4px);
+    transform: translateX (4px);
+  }
+  66,6% {
+    -webkit-transform: translateX (-2px);
+    transformar: translateX (-2px);
+  }
+  83.25% {
+    -webkit-transform: translateX (1px);
+    transform: translateX (1px);
+  }
+  100% {
+    -webkit-transform: translateX (0);
+    transformar: traducirX (0);
+  }
+}
+@keyframes hvr-icon-wobble-horizontal {
+  16,65% {
+    -webkit-transform: translateX (6px);
+    transform: translateX (6px);
+  }
+  33,3% {
+    -webkit-transform: translateX (-5px);
+    transform: translateX (-5px);
+  }
+  49.95% {
+    -webkit-transform: translateX (4px);
+    transform: translateX (4px);
+  }
+  66,6% {
+    -webkit-transform: translateX (-2px);
+    transformar: translateX (-2px);
+  }
+  83.25% {
+    -webkit-transform: translateX (1px);
+    transform: translateX (1px);
+  }
+  100% {
+    -webkit-transform: translateX (0);
+    transformar: traducirX (0);
+  }
+}
+.hvr-icon-wobble-horizontal {
+  pantalla: bloque en línea;
+  alineación vertical: medio;
+  -webkit-transform: perspectiva (1px) translateZ (0);
+  transform: perspectiva (1px) translateZ (0);
+  box-shadow: 0 0 1px rgba (0, 0, 0, 0);
+  -webkit-transición-duración: 0.3s;
+  duración de transición: 0.3s;
+}
+.hvr-icon-wobble-horizontal .hvr-icon {
+  -webkit-transform: translateZ (0);
+  transformar: traducirZ (0);
+}
+.hvr-icon-wobble-horizontal: coloca el cursor sobre .hvr-icon, .hvr-icon-wobble-horizontal: focus .hvr-icon, .hvr-icon-wobble-horizontal: active .hvr-icon {
+  -webkit-animation-name: hvr-icon-wobble-horizontal;
+  nombre-animación: hvr-icon-wobble-horizontal;
+  -webkit-animation-duración: 1s;
+  duración de la animación: 1s;
+  -webkit-animation-timing-function: facilidad de entrada;
+  función de sincronización de animación: facilidad de entrada y salida;
+  -webkit-animation-iteration-count: 1;
+  animación-iteración-cuenta: 1;
+}
+
+/ * Icon Wobble Vertical * /
+@ -webkit-keyframes hvr-icon-wobble-vertical {
+  16,65% {
+    -webkit-transform: translateY (6px);
+    transform: translateY (6px);
+  }
+  33,3% {
+    -webkit-transform: translateY (-5px);
+    transform: translateY (-5px);
+  }
+  49.95% {
+    -webkit-transform: translateY (4px);
+    transform: translateY (4px);
+  }
+  66,6% {
+    -webkit-transform: translateY (-2px);
+    transform: translateY (-2px);
+  }
+  83.25% {
+    -webkit-transform: translateY (1px);
+    transform: translateY (1px);
+  }
+  100% {
+    -webkit-transform: translateY (0);
+    transformar: traducirY (0);
+  }
+}
+@keyframes hvr-icon-wobble-vertical {
+  16,65% {
+    -webkit-transform: translateY (6px);
+    transform: translateY (6px);
+  }
+  33,3% {
+    -webkit-transform: translateY (-5px);
+    transform: translateY (-5px);
+  }
+  49.95% {
+    -webkit-transform: translateY (4px);
+    transform: translateY (4px);
+  }
+  66,6% {
+    -webkit-transform: translateY (-2px);
+    transform: translateY (-2px);
+  }
+  83.25% {
+    -webkit-transform: translateY (1px);
+    transform: translateY (1px);
+  }
+  100% {
+    -webkit-transform: translateY (0);
+    transformar: traducirY (0);
+  }
+}
+.hvr-icon-wobble-vertical {
+  pantalla: bloque en línea;
+  alineación vertical: medio;
+  -webkit-transform: perspectiva (1px) translateZ (0);
+  transform: perspectiva (1px) translateZ (0);
+  box-shadow: 0 0 1px rgba (0, 0, 0, 0);
+  -webkit-transición-duración: 0.3s;
+  duración de transición: 0.3s;
+}
+.hvr-icon-wobble-vertical .hvr-icon {
+  -webkit-transform: translateZ (0);
+  transformar: traducirZ (0);
+}
+.hvr-icon-wobble-vertical: hover .hvr-icon, .hvr-icon-wobble-vertical: focus .hvr-icon, .hvr-icon-wobble-vertical: active .hvr-icon {
+  -webkit-animation-name: hvr-icon-wobble-vertical;
+  nombre-animación: hvr-icon-wobble-vertical;
+  -webkit-animation-duración: 1s;
+  duración de la animación: 1s;
+  -webkit-animation-timing-function: facilidad de entrada;
+  función de sincronización de animación: facilidad de entrada y salida;
+  -webkit-animation-iteration-count: 1;
+  animación-iteración-cuenta: 1;
+}
+
+/ * Icon Buzz * /
+@ -webkit-keyframes hvr-icon-buzz {
+  50% {
+    -webkit-transform: translateX (3px) rotate (2deg);
+    transform: translateX (3px) rotate (2deg);
+  }
+  100% {
+    -webkit-transform: translateX (-3px) rotate (-2deg);
+    transform: translateX (-3px) rotate (-2deg);
+  }
+}
+@keyframes hvr-icon-buzz {
+  50% {
+    -webkit-transform: translateX (3px) rotate (2deg);
+    transform: translateX (3px) rotate (2deg);
+  }
+  100% {
+    -webkit-transform: translateX (-3px) rotate (-2deg);
+    transform: translateX (-3px) rotate (-2deg);
+  }
+}
+.hvr-icon-buzz {
+  pantalla: bloque en línea;
+  alineación vertical: medio;
+  -webkit-transform: perspectiva (1px) translateZ (0);
+  transform: perspectiva (1px) translateZ (0);
+  box-shadow: 0 0 1px rgba (0, 0, 0, 0);
+  -webkit-transición-duración: 0.3s;
+  duración de transición: 0.3s;
+}
+.hvr-icon-buzz .hvr-icon {
+  -webkit-transform: translateZ (0);
+  transformar: traducirZ (0);
+}
+.hvr-icon-buzz: coloca el cursor sobre .hvr-icon, .hvr-icon-buzz: focus .hvr-icon, .hvr-icon-buzz: active .hvr-icon {
+  -webkit-animation-name: hvr-icon-buzz;
+  nombre-animación: hvr-icon-buzz;
+  -webkit-animation-duración: 0.15s;
+  duración de la animación: 0,15 s;
+  -webkit-animation-timing-function: lineal;
+  función de sincronización de animación: lineal;
+  -webkit-animation-iteration-count: infinito;
+  animación-recuento-iteración: infinito;
+}
+
+/ * Icon Buzz Out * /
+@ -webkit-keyframes hvr-icon-buzz-out {
+  10% {
+    -webkit-transform: translateX (3px) rotate (2deg);
+    transform: translateX (3px) rotate (2deg);
+  }
+  20% {
+    -webkit-transform: translateX (-3px) rotate (-2deg);
+    transform: translateX (-3px) rotate (-2deg);
+  }
+  30% {
+    -webkit-transform: translateX (3px) rotate (2deg);
+    transform: translateX (3px) rotate (2deg);
+  }
+  40% {
+    -webkit-transform: translateX (-3px) rotate (-2deg);
+    transform: translateX (-3px) rotate (-2deg);
+  }
+  50% {
+    -webkit-transform: translateX (2px) rotate (1deg);
+    transform: translateX (2px) rotate (1deg);
+  }
+  60% {
+    -webkit-transform: translateX (-2px) rotate (-1deg);
+    transform: translateX (-2px) rotate (-1deg);
+  }
+  70% {
+    -webkit-transform: translateX (2px) rotate (1deg);
+    transform: translateX (2px) rotate (1deg);
+  }
+  80% {
+    -webkit-transform: translateX (-2px) rotate (-1deg);
+    transform: translateX (-2px) rotate (-1deg);
+  }
+  90% {
+    -webkit-transform: translateX (1px) rotar (0);
+    transform: translateX (1px) rotar (0);
+  }
+  100% {
+    -webkit-transform: translateX (-1px) rotar (0);
+    transform: translateX (-1px) rotar (0);
+  }
+}
+@keyframes hvr-icon-buzz-out {
+  10% {
+    -webkit-transform: translateX (3px) rotate (2deg);
+    transform: translateX (3px) rotate (2deg);
+  }
+  20% {
+    -webkit-transform: translateX (-3px) rotate (-2deg);
+    transform: translateX (-3px) rotate (-2deg);
+  }
+  30% {
+    -webkit-transform: translateX (3px) rotate (2deg);
+    transform: translateX (3px) rotate (2deg);
+  }
+  40% {
+    -webkit-transform: translateX (-3px) rotate (-2deg);
+    transform: translateX (-3px) rotate (-2deg);
+  }
+  50% {
+    -webkit-transform: translateX (2px) rotate (1deg);
+    transform: translateX (2px) rotate (1deg);
+  }
+  60% {
+    -webkit-transform: translateX (-2px) rotate (-1deg);
+    transform: translateX (-2px) rotate (-1deg);
+  }
+  70% {
+    -webkit-transform: translateX (2px) rotate (1deg);
+    transform: translateX (2px) rotate (1deg);
+  }
+  80% {
+    -webkit-transform: translateX (-2px) rotate (-1deg);
+    transform: translateX (-2px) rotate (-1deg);
+  }
+  90% {
+    -webkit-transform: translateX (1px) rotar (0);
+    transform: translateX (1px) rotar (0);
+  }
+  100% {
+    -webkit-transform: translateX (-1px) rotar (0);
+    transform: translateX (-1px) rotar (0);
+  }
+}
+.hvr-icon-buzz-out {
+  pantalla: bloque en línea;
+  alineación vertical: medio;
+  -webkit-transform: perspectiva (1px) translateZ (0);
+  transform: perspectiva (1px) translateZ (0);
+  box-shadow: 0 0 1px rgba (0, 0, 0, 0);
+  -webkit-transición-duración: 0.3s;
+  duración de transición: 0.3s;
+}
+.hvr-icon-buzz-out .hvr-icon {
+  -webkit-transform: translateZ (0);
+  transformar: traducirZ (0);
+}
+.hvr-icon-buzz-out: desplace el mouse .hvr-icon, .hvr-icon-buzz-out: focus .hvr-icon, .hvr-icon-buzz-out: active .hvr-icon {
+  -webkit-animation-name: hvr-icon-buzz-out;
+  nombre-animación: hvr-icon-buzz-out;
+  -webkit-animation-duración: 0.75s;
+  duración de la animación: 0,75 s;
+  -webkit-animation-timing-function: lineal;
+  función de sincronización de animación: lineal;
+  -webkit-animation-iteration-count: 1;
+  animación-iteración-cuenta: 1;
+}
+
+/ * RIZOS * /
+/ * Curl arriba a la izquierda * /
+.hvr-curl-top-left {
+  pantalla: bloque en línea;
+  alineación vertical: medio;
+  -webkit-transform: perspectiva (1px) translateZ (0);
+  transform: perspectiva (1px) translateZ (0);
+  box-shadow: 0 0 1px rgba (0, 0, 0, 0);
+  posición: relativa;
+}
+.hvr-curl-top-left: antes de {
+  eventos de puntero: ninguno;
+  posición: absoluta;
+  contenido: '';
+  altura: 0;
+  ancho: 0;
+  arriba: 0;
+  izquierda: 0;
+  fondo: blanco;
+  / * IE9 * /
+  fondo: gradiente lineal (135 grados, blanco 45%, #aaa 50%, #ccc 56%, blanco 80%);
+  filter: progid: DXImageTransform.Microsoft.gradient (GradientType = 0, startColorstr = '# ffffff', endColorstr = '# 000000');
+  / * Para IE7-8-9 * /
+  índice z: 1000;
+  cuadro-sombra: 1px 1px 1px rgba (0, 0, 0, 0.4);
+  -webkit-transición-duración: 0.3s;
+  duración de transición: 0.3s;
+  -webkit-transition-property: ancho, alto;
+  propiedad de transición: ancho, alto;
+}
+.hvr-curl-top-left: hover: before, .hvr-curl-top-left: focus: before, .hvr-curl-top-left: active: before {
+  ancho: 25px;
+  altura: 25px;
+}
+
+/ * Curl arriba a la derecha * /
+.hvr-curl-top-right {
+  pantalla: bloque en línea;
+  alineación vertical: medio;
+  -webkit-transform: perspectiva (1px) translateZ (0);
+  transform: perspectiva (1px) translateZ (0);
+  box-shadow: 0 0 1px rgba (0, 0, 0, 0);
+  posición: relativa;
+}
+.hvr-curl-top-right: antes de {
+  eventos de puntero: ninguno;
+  posición: absoluta;
+  contenido: '';
+  altura: 0;
+  ancho: 0;
+  arriba: 0;
+  derecha: 0;
+  fondo: blanco;
+  / * IE9 * /
+  fondo: gradiente lineal (225 grados, blanco 45%, #aaa 50%, #ccc 56%, blanco 80%);
+  cuadro-sombra: -1px 1px 1px rgba (0, 0, 0, 0.4);
+  -webkit-transición-duración: 0.3s;
+  duración de transición: 0.3s;
+  -webkit-transition-property: ancho, alto;
+  propiedad de transición: ancho, alto;
+}
+.hvr-curl-top-right: hover: before, .hvr-curl-top-right: focus: before, .hvr-curl-top-right: active: before {
+  ancho: 25px;
+  altura: 25px;
+}
+
+/ * Curl Inferior derecha * /
+.hvr-curl-bottom-right {
+  pantalla: bloque en línea;
+  alineación vertical: medio;
+  -webkit-transform: perspectiva (1px) translateZ (0);
+  transform: perspectiva (1px) translateZ (0);
+  box-shadow: 0 0 1px rgba (0, 0, 0, 0);
+  posición: relativa;
+}
+.hvr-curl-bottom-right: antes de {
+  eventos de puntero: ninguno;
+  posición: absoluta;
+  contenido: '';
+  altura: 0;
+  ancho: 0;
+  abajo: 0;
+  derecha: 0;
+  fondo: blanco;
+  / * IE9 * /
+  fondo: gradiente lineal (315 grados, blanco 45%, #aaa 50%, #ccc 56%, blanco 80%);
+  box-shadow: -1px -1px 1px rgba (0, 0, 0, 0.4);
+  -webkit-transición-duración: 0.3s;
+  duración de transición: 0.3s;
+  -webkit-transition-property: ancho, alto;
+  propiedad de transición: ancho, alto;
+}
+.hvr-curl-bottom-right: hover: before, .hvr-curl-bottom-right: focus: before, .hvr-curl-bottom-right: active: before {
+  ancho: 25px;
+  altura: 25px;
+}
+
+/ * Curl Bottom Left * /
+.hvr-curl-bottom-left {
+  pantalla: bloque en línea;
+  alineación vertical: medio;
+  -webkit-transform: perspectiva (1px) translateZ (0);
+  transform: perspectiva (1px) translateZ (0);
+  box-shadow: 0 0 1px rgba (0, 0, 0, 0);
+  posición: relativa;
+}
+.hvr-curl-bottom-left: antes de {
+  eventos de puntero: ninguno;
+  posición: absoluta;
+  contenido: '';
+  altura: 0;
+  ancho: 0;
+  abajo: 0;
+  izquierda: 0;
+  fondo: blanco;
+  / * IE9 * /
+  fondo: gradiente lineal (45 grados, blanco 45%, #aaa 50%, #ccc 56%, blanco 80%);
+  box-shadow: 1px -1px 1px rgba (0, 0, 0, 0.4);
+  -webkit-transición-duración: 0.3s;
+  duración de transición: 0.3s;
+  -webkit-transition-property: ancho, alto;
+  propiedad de transición: ancho, alto;
+}
+.hvr-curl-bottom-left: hover: before, .hvr-curl-bottom-left: focus: before, .hvr-curl-bottom-left: active: before {
+  ancho: 25px;
+  altura: 25px;
+}
+
+/ * # sourceMappingURL = hover.css.map * /

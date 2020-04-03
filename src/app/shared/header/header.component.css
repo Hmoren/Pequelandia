@@ -31,3 +31,8 @@
 a:hover, button:hover {
     color: #ffffff;
 }
+
+
+a[_ngcontent-c1]:hover, button[_ngcontent-c1]:hover {
+    color: #a0a0a0;
+}
