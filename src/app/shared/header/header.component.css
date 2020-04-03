@@ -1,0 +1,33 @@
+.header__wrapper {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+.info-bar {
+    background-color: #87a4db;
+    color: #fff!important;
+    padding: 5px 0;
+    min-height: 20px;
+}
+.rk-menu__link {
+    padding-bottom: .2rem;
+}
+
+.rk-search {
+   
+    margin-bottom: 1rem;
+    
+}
+
+.ae-grid--collapse, .ae-grid--deepcollapse, .ae-grid--deepcollapse .ae-grid {
+    margin-left: 0;
+    margin-right: 0;
+    margin-right: 2rem;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    margin-bottom: .5rem;
+}
+a:hover, button:hover {
+    color: #ffffff;
+}
